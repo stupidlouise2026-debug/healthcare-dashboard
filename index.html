@@ -1739,8 +1739,47 @@
     </div>
 
     <p class="text-small source-note">Source：ETF 总回报日频序列为 testfol.io 回测 API（分红再投），as-of 2026-08-06，图为周频取样（每周最后交易日），本项目计算；该聚合器上游数据商未披露，单日精度未验证。利率为有效联邦基金利率（<a href="https://fred.stlouisfed.org/series/DFF" target="_blank" rel="noopener noreferrer">FRED: DFF</a>，日频）。</p>
-    <p class="text-small source-note">代理：大药企＝PPH（VanEck Pharmaceutical，全球大药厂 25 只市值加权）；整体医药＝XLV（标普医疗板块，含药、械、保险、服务）；生科基准＝XBI。BBP/BBC 为 Virtus LifeSci 商业化阶段／临床阶段等权 ETF（2014-12-18 成立，故图自此起；基金名称近期疑有调整，引用全名前待核实）。</p>
+    <p class="text-small source-note">代理：大药企＝PPH（VanEck Pharmaceutical，全球大药厂 25 只市值加权）；整体医药＝XLV（标普医疗板块，含药、械、保险、服务）；生科基准＝XBI。BBP/BBC 为 Virtus 商业化阶段／临床阶段生科等权 ETF（2014-12-18 成立，故图自此起；2026-02-27 起更名去掉「LifeSci」品牌，现名 Virtus Biotech ETF / Virtus Biotech Clinical Trials ETF，跟踪指数与编制规则未变）。</p>
     <p class="text-small source-note">策略口径：美元总回报，月末信号、次日收盘执行，单边 0.1% 成本。10 年表与分销对照为 testfol.io 日频总回报单一实现；5 年段区间下限为同源复算、上限为另一独立实现（复权收盘价），四条持有基准两边完全一致。分销三巨头＝MCK/COR/CAH 等权、月度再平衡合成序列（COR 含改名前 AmerisourceBergen 完整历史）。<strong>本段与上方「十年回看」段的指数层数据（as-of 2026-06-30）不同源、不同截止日，数字不可混用。</strong></p>
+  </section>
+
+
+  <section class="card model-card">
+    <span class="section-label text-small">右侧个股</span>
+    <h3>大空间新方向的右侧个股：不猜科学，只跟证据</h3>
+    <p class="text-small data-note">左侧判断单个资产的临床成败，胜率不到 10%，做再多研究也提升不了——这是科学问题，不是信息问题。但行业会不断诞生新方向，空间足够大的方向会给出一条可验证的证据链：<strong>关键数据 → 获批 → 放量爬坡</strong>，每一步都公开可查。这个策略把「预判成败」换成「跟踪放量」：等证据出现再进入。三个案例核数——GLP-1 减肥药两家，加脉冲电场消融（PFA，治疗房颤的新一代器械）一家。</p>
+
+    <div class="table-responsive">
+      <table class="table table-sm company-table wide-table">
+        <thead><tr><th>案例</th><th>右侧买点（证据落地日）</th><th>峰值</th><th class="text-end">右侧→峰值</th><th class="text-end">左侧→峰值</th><th class="text-end">峰值后（2026-08）</th></tr></thead>
+        <tbody>
+          <tr><td class="text-nowrap"><strong>礼来 LLY</strong><br><span class="text-small">GLP-1</span></td><td>SURMOUNT-1 减重数据 2022-04（~$293）；Zepbound 获批 2023-11（~$597）</td><td>2026-07 $1,236<br>市值 ~$1.1 万亿</td><td class="text-end"><strong>4.2×</strong><br><span class="text-small">获批起 2.1×</span></td><td class="text-end">10.7×<br><span class="text-small">2018 起</span></td><td class="text-end" style="color:#16a34a">仍在高位<br>~$1,186</td></tr>
+          <tr><td class="text-nowrap"><strong>诺和诺德 NVO</strong><br><span class="text-small">GLP-1</span></td><td>Wegovy 获批 2021-06（~$40）</td><td>2024-06 ~$148<br>市值 ~$6,400 亿</td><td class="text-end"><strong>3.7×</strong></td><td class="text-end">7.8×<br><span class="text-small">2018 起</span></td><td class="text-end" style="color:#dc2626">−67%～−74%<br>$47.26</td></tr>
+          <tr><td class="text-nowrap"><strong>波士顿科学 BSX</strong><br><span class="text-small">PFA</span></td><td>Farapulse 获批 2024-01（$62.79）</td><td>2025-09 ~$110<br>市值 ~$1,580 亿</td><td class="text-end"><strong>1.7×</strong></td><td class="text-end">11.4×<br><span class="text-small">2013 起</span></td><td class="text-end" style="color:#dc2626">−55%<br>~$49</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-small data-note">口径：倍数＝峰值价 ÷ 起点价，即「变成几倍」（4.2× 即涨了 3.2 倍）。右侧买点到峰值实测 <strong>1.7–4.2 倍；「10 倍以上」只出现在左侧起点</strong>——2018 年的礼来/诺和、2013 年的波科，都在方向确立之前，那是左侧的赔率，不是右侧的合理预期。</p>
+
+    <div class="counter-note" style="border-width:2px;">
+      <p class="text-small" style="margin:0 0 6px"><strong>2–4 倍从哪来：收入放量 × 估值抬升的双击，两边贡献大致对半。</strong></p>
+      <p class="text-small" style="margin:0 0 6px"><strong>收入端</strong>：礼来 incretin（Mounjaro+Zepbound）FY2024 $164 亿 → FY2025 <strong>$365 亿</strong>（已占公司总收入 56%），Q2 2026 单季 $149 亿、年化约 $600 亿；GLP-1 双雄 2025 年合计约 $660 亿，史上最大单一药物赛道。波科 Farapulse 上市首年即破 $10 亿，电生理板块 FY2025 $33 亿（+75%）。</p>
+      <p class="text-small" style="margin:0"><strong>估值端</strong>：峰值 PS 被推到放量前常态的 2–3 倍——礼来 ~19×（2024-08 峰）/ ~17×（2026-07 峰）、诺和 ~15×、波科 ~7.9×，而三家放量前自身 PS 约 5–8×。这个 2–4 倍与单资产价值框架自洽：同一资产 II 期后 0.34×P → 爬坡中段 2.24×P 是 6.6 倍上限，平台型公司被存量业务稀释后，落到股价上就是 2–4 倍。</p>
+    </div>
+
+    <div class="ratio-check" style="background:#fef2f2;border-color:#fecaca">
+      <p class="text-small" style="margin:0 0 5px"><strong>数据逼出来的纪律：右侧进入必须配右侧退出——竞争追平是每个放量故事的默认终点。</strong>三个案例两个已从峰值回撤过半：诺和输给礼来＋美国降价（Q2 2026 美国 Wegovy 收入 −22%，FY2026 销售指引 0% 至 −6%）；波科被对手 PFA 上市追平（电生理增速 +139% → +75% → +9.1%，一年内两次下调指引）。</p>
+      <p class="text-small" style="margin:0">死拿的代价：诺和的 3.7× 变成 1.2×；波科获批日买入拿到今天是<strong>负收益</strong>（$62.79 → ~$49）。退出信号和进入信号一样右侧可观察：<strong>份额、增速、指引，任何一个拐头就走</strong>。三个案例都验证「进入端」有效，两个警示「退出端」缺失的代价。</p>
+    </div>
+
+    <div class="ratio-check">
+      <p class="text-small" style="margin:0 0 6px"><strong>诚实的限制（引用这个数字前必读）。</strong></p>
+      <p class="text-small" style="margin:0 0 5px"><strong>① 案例核数，不是回测。</strong>三个案例都是事后已知的赢家，有幸存者偏差；「证据链出现后买入」在失败方向上的亏损未统计，无法给出胜率。</p>
+      <p class="text-small" style="margin:0 0 5px"><strong>② 峰值 PS 为本项目粗算</strong>（峰值市值 ÷ 当年总收入），未经第三方核对；礼来 2024-08 峰值市值（~$8,650 亿）为按股数估算。</p>
+      <p class="text-small" style="margin:0 0 5px"><strong>③「空间足够大」本身是事前判断</strong>，有主观成分——GLP-1 与 PFA 在放量前就被广泛看好，但同期被同样看好、最终失败的方向没有进入样本。</p>
+      <p class="text-small" style="margin:0"><strong>④ 定位：与上一段的利率轮动互补</strong>——轮动是板块层面的择时（拿篮子，赚周期的钱），这一段是个股层面的进攻（拿赢家，赚放量的钱）。</p>
+    </div>
+    <p class="text-small source-note">Source：价格与市值节点 macrotrends / stockanalysis / 当日财经报道；收入与指引为公司业绩稿（礼来 FY2025、Q2 2026；诺和诺德 Q2 2026；波士顿科学 FY2024–Q2 2026）。检索 as-of 2026-08-09；诺和 2021-06 价格为拆股调整近似，波科现价为周末检索。</p>
   </section>
 
 
