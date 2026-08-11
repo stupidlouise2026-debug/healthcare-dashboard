@@ -1646,13 +1646,13 @@
     </div>
 
     <p class="text-small source-note">Source｜全部为 testfol.io 回测 API 的总回报日序列（分红再投，ETF 为已扣费的净值口径），截至 2026-08-07／08-10，本项目计算；波动＝日收益标准差 × √252，最大回撤为窗口内峰谷，收益/波动为未减无风险利率的粗略风险调整比、仅可组内横比。1993 年长窗口无免费指数序列，用共同基金代理：生物科技＝富达精选生物科技（1985 起，主动管理、费率约 0.7%）、纳斯达克 100＝Rydex 纳指 100（1994 起，费率约 1.3%）——两个代理的费率误差方向一致，真实差距只会比表中更难看。持仓明细为 stockanalysis.com 2026-08-11 抓取。</p>
-    <p class="text-small source-note"><strong>待核实：</strong>BBH 与 PPH 的长序列前段是 1999–2000 年的 HOLDRS 固定篮子（不再平衡、不剔除），2011-12 才转为 ETF，两段编制规则不同，拼接口径未回原始文件核对，其"自成立起"数字仅作参考；PBE 跟踪的量化选股指数现行名称与规则未核。分段②③的分界点 2015-07 是按生物科技指数前高选出的，带后视镜；正文"2015 年后跑输 5.1 pp"采用自然年 2015-01-01 起算口径（生科 8.83%、IBB 6.22%、XBI 8.48% vs 标普 13.97%）。</p>
+    <p class="text-small source-note"><strong>BBH／PPH 的「自成立起」不是指数业绩，只是这只代码自己的历史：</strong>两者前段（BBH 1999-11 起、PPH 2000-02 起）是 HOLDRS 固定篮子——不再平衡、成分被并购就少一个，2011-12 才转成现在的 ETF。序列本身连续、拼接点无跳空，但两段测的不是同一个东西：HOLDRS 段 BBH 年化 +5.53%，同期 IBB 只有 +0.27%（2001-02 起可比），日收益相关性 0.87；转成 ETF 之后同一对相关性升到 0.97。<strong>所以 BBH 那 11.03% 里有相当一部分来自 HOLDRS 时代那个越缩越集中的大市值篮子，不能当生物科技指数的长期回报来读。</strong>PPH 是反面：HOLDRS 段十二年只有 +0.54% 年化（同期 XLV +2.30%），2000 年代大药企专利悬崖那一段是真的，它 5.88% 就低在这里。<strong>待核实：</strong>PBE 跟踪的量化选股指数现行名称与规则未核。分段②③的分界点 2015-07 是按生物科技指数前高选出的，带后视镜；正文"2015 年后跑输 5.1 pp"采用自然年 2015-01-01 起算口径（生科 8.83%、IBB 6.22%、XBI 8.48% vs 标普 13.97%）。</p>
   </section>
 
   <section class="card model-card">
     <span class="section-label text-small">十年回看</span>
     <h3>过去 10 年 / 5 年，美股医药真正赚到钱的是谁：指数跑输大盘，赢家几乎全是个股逻辑</h3>
-    <p class="text-small data-note">三层往下看：先看医药指数与大盘差多少，再看十年 / 五年真正跑出来的是哪些个股，最后看这些赢家所在的产业里、其余公司拿到了什么。第一层是官方指数与 ETF，第二、三层是 180 只个股的全样本口径，两者截止日不同、已各自标注，数字不可跨层混用。</p>
+    <p class="text-small data-note">三层往下看：先看医药指数与大盘差多少，再看十年里真正跑出来的是哪些个股，最后看这些赢家所在的产业里、其余公司拿到了什么。第一层是官方指数与 ETF，第二、三层是 180 只个股的全样本口径，两者截止日不同、已各自标注，数字不可跨层混用。</p>
 
     <p class="text-small chart-label">第一层｜医药指数跑不赢大盘：十年年化总回报</p>
     <div class="stat-strip">
@@ -1704,31 +1704,6 @@
     </div>
     <p class="text-small">末 10 名（同窗）：PRGO −15.06%｜MYGN −16.95%｜EVH −17.44%｜OPK −17.96%｜PACB −18.03%｜EDIT −18.12%｜NVAX −24.85%｜SGMO −33.61%（十年剩 2%）。</p>
 
-    <p class="text-small chart-label" style="margin-top:18px">五年榜（2021-08-11 → 2026-08-10，177 只样本，年化总回报）</p>
-    <div class="table-responsive">
-      <table class="table table-sm company-table wide-table">
-        <thead><tr><th>#</th><th>代码</th><th>靠什么赚的</th><th class="text-end">年化</th><th class="text-end">波动</th><th class="text-end">最大回撤</th><th class="text-end">收益/波动</th></tr></thead>
-        <tbody>
-              <tr><td>1</td><td><strong>AXSM</strong></td><td>中枢神经多产品线</td><td class="text-end"><strong>56.02%</strong></td><td class="text-end">66.7%</td><td class="text-end">−53.5%</td><td class="text-end">0.84</td></tr>
-              <tr><td>2</td><td><strong>RYTM</strong></td><td>setmelanotide 罕见遗传性肥胖</td><td class="text-end"><strong>52.99%</strong></td><td class="text-end">76.0%</td><td class="text-end">−78.1%</td><td class="text-end">0.70</td></tr>
-              <tr><td>3</td><td><strong>ADMA</strong></td><td>血浆源免疫球蛋白，供给紧缺＋产能爬坡</td><td class="text-end"><strong>44.87%</strong></td><td class="text-end">59.5%</td><td class="text-end">−69.0%</td><td class="text-end">0.75</td></tr>
-              <tr><td>4</td><td><strong>MDGL</strong></td><td>Rezdiffra 商业化放量</td><td class="text-end">43.55%</td><td class="text-end">133.6%</td><td class="text-end">−61.4%</td><td class="text-end">0.33</td></tr>
-              <tr><td>5</td><td><strong>KRYS</strong></td><td>VYJUVEK——唯一盈利的基因治疗（外用凝胶）</td><td class="text-end">42.15%</td><td class="text-end">76.6%</td><td class="text-end">−44.5%</td><td class="text-end">0.55</td></tr>
-              <tr><td>6</td><td><strong>VKTX</strong></td><td>VK2735 减重分子（零收入）</td><td class="text-end">42.01%</td><td class="text-end">101.9%</td><td class="text-end">−78.9%</td><td class="text-end">0.41</td></tr>
-              <tr><td>7</td><td><strong>CORT</strong></td><td>库欣综合征＋二代药</td><td class="text-end">40.97%</td><td class="text-end">75.8%</td><td class="text-end">−71.9%</td><td class="text-end">0.54</td></tr>
-              <tr><td>8</td><td><strong>INSM</strong></td><td>brensocatib 上市</td><td class="text-end">40.82%</td><td class="text-end">74.3%</td><td class="text-end">−56.5%</td><td class="text-end">0.55</td></tr>
-              <tr style="background:#FAF6F1"><td><strong>9</strong></td><td><strong>CAH</strong></td><td><strong>药品分销</strong></td><td class="text-end"><strong>38.65%</strong></td><td class="text-end"><strong>24.6%</strong></td><td class="text-end"><strong>−21.0%</strong></td><td class="text-end"><strong>1.57</strong></td></tr>
-              <tr><td>10</td><td><strong>IMVT</strong></td><td>FcRn 自身免疫</td><td class="text-end">37.55%</td><td class="text-end">73.6%</td><td class="text-end">−69.9%</td><td class="text-end">0.51</td></tr>
-              <tr style="background:#FAF6F1"><td>11</td><td><strong>LLY</strong></td><td>GLP-1</td><td class="text-end">37.38%</td><td class="text-end">32.7%</td><td class="text-end">−34.5%</td><td class="text-end"><strong>1.14</strong></td></tr>
-              <tr><td>12</td><td><strong>ROIV</strong></td><td>Telavant 转手卖给罗氏</td><td class="text-end">35.75%</td><td class="text-end">59.6%</td><td class="text-end">−79.2%</td><td class="text-end">0.60</td></tr>
-              <tr style="background:#FAF6F1"><td><strong>13</strong></td><td><strong>MCK</strong></td><td><strong>药品分销</strong></td><td class="text-end"><strong>35.61%</strong></td><td class="text-end"><strong>24.7%</strong></td><td class="text-end"><strong>−27.2%</strong></td><td class="text-end"><strong>1.44</strong></td></tr>
-              <tr style="background:#FAF6F1"><td><strong>21</strong></td><td><strong>COR</strong></td><td><strong>药品分销</strong></td><td class="text-end"><strong>24.02%</strong></td><td class="text-end"><strong>22.6%</strong></td><td class="text-end"><strong>−32.4%</strong></td><td class="text-end"><strong>1.06</strong></td></tr>
-              <tr style="background:#F5F1EC"><td>41</td><td>QQQ</td><td>纳斯达克 100（基准）</td><td class="text-end">15.20%</td><td class="text-end">—</td><td class="text-end">—</td><td class="text-end">—</td></tr>
-              <tr style="background:#F5F1EC"><td><strong>46</strong></td><td><strong>SPY</strong></td><td>标普 500（基准）</td><td class="text-end"><strong>13.27%</strong></td><td class="text-end">—</td><td class="text-end">—</td><td class="text-end">—</td></tr>
-              <tr style="background:#F5F1EC"><td>65 / 77 / 80</td><td>XLV / XBI / IBB</td><td>医药三条基准线</td><td class="text-end" style="color:#8C4A57">6.74% / 4.82% / 3.85%</td><td class="text-end">—</td><td class="text-end">—</td><td class="text-end">—</td></tr>
-        </tbody>
-      </table>
-    </div>
     <div class="stat-strip">
       <div><span class="text-small">十年、五年跑赢标普的比例</span><strong>都恰好 25%</strong><span class="text-small">36/144 与 45/177，两个独立窗口一致</span></div>
       <div><span class="text-small">标普 500 在医药个股里的分位</span><strong>两个窗口都是前 26%</strong><span class="text-small">「什么都不做」打败 74% 的医药股</span></div>
@@ -2030,20 +2005,6 @@
         <div><span class="text-small">中国</span><strong>CNY 300B</strong></div>
       </div>
       <p class="source-note text-small">Source：<a href="https://www.iqvia.com/locations/united-states/blogs/2025/10/us-life-sciences-industry-thrives-with-robust-growth-and-innovation" target="_blank" rel="noopener noreferrer">IQVIA</a>（美国品牌处方药净厂商收入代理）；中国按当前项目口径。</p>
-      <p>本质是用新靶点、新分子和新递送方式换取更好的疗效；回报最高，但失败率也最高。</p>
-
-      <div class="track-group">
-        <strong>按技术路线</strong>
-        <p class="text-small">小分子｜抗体、蛋白与多肽｜小核酸 RNAi / ASO / mRNA｜ADC｜双抗 / 多抗 / TCE｜细胞与基因治疗｜放射性药物｜蛋白降解</p>
-      </div>
-
-      <div class="track-group">
-        <strong>产业链位置</strong>
-        <p class="text-small">科研工具与数据 → AI/靶点平台 → Biotech 管线 → CRO/CDMO → 大药企临床、注册与商业化</p>
-      </div>
-
-      <p class="thesis"><strong>重点浪潮：</strong>自免 TCE、蛋白降解、小核酸、体内基因编辑、放射性药物与下一代 ADC。这些路线的排序、代表个股与失效条件见页尾“重点方向 A 组”。</p>
-
       <div class="innovation-framework" aria-labelledby="innovation-framework-title">
         <div class="framework-head">
           <h4 id="innovation-framework-title">创新药技术路线总框架</h4>
