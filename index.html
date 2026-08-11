@@ -992,10 +992,11 @@
 
   <nav class="ghaf-nav" aria-label="看板分页">
     <span class="ghaf-nav-label">页</span>
-    <button type="button" data-ghaf-page="1" class="active">1｜总览</button>
-    <button type="button" data-ghaf-page="2">2｜方向排序</button>
-    <button type="button" data-ghaf-page="3">3｜五口径验证</button>
-    <button type="button" data-ghaf-page="4">4｜MNC 交易</button>
+    <button type="button" data-ghaf-page="1" class="active">1｜主线</button>
+    <button type="button" data-ghaf-page="2">附注·市场与支付</button>
+    <button type="button" data-ghaf-page="3">附注·创新器械</button>
+    <button type="button" data-ghaf-page="4">附注·方向排序</button>
+    <button type="button" data-ghaf-page="5">附注·验证与交易</button>
   </nav>
 
   <div class="ghaf-page active" id="ghaf-page-1">
@@ -1004,233 +1005,57 @@
   <div class="chapter-lede" style="margin:18px 0 6px;">
     <p><strong>核心矛盾：创新药拥有整个医药板块里最大的价值，但新药研发本身是一件回报率不高的事。</strong></p>
     <ul style="margin-top:8px">
-      <li><strong>一｜价值量在哪。</strong>美股医药是一个大板块，底下至少五个子行业；无论二级市场市值还是产业现金流，价值量最大的都是创新药。</li>
-      <li><strong>二｜这些公司怎么活。</strong>创新药的商业模式与现金流模型，以及平台型大药企与小生物科技公司这两类企业各自的生存方式。</li>
-      <li><strong>三｜过去谁赚到了钱。</strong>回看各板块过去十年与三十年的真实回报，找出真正跑赢的策略长什么样，用它来指导往后怎么选标的。</li>
-      <li><strong>四｜接下来怎么投。</strong>不同板块的收益分布形态不同，打法就不同：
-        <ul>
-          <li><strong>适合买板块</strong>——Biotech 这类子行业，个股离散度低、beta 主导，买板块比选个股更合理。</li>
-          <li><strong>适合选个股</strong>——大药企，以及基因测序这类新技术方向，个股方差极大：同一个板块里有公司破产，也有公司走成二十倍股，超额收益全在选股上。</li>
-          <li><strong>大药企的具体打法</strong>——在标的尽可能左侧的位置建仓，买的是它右侧那些还没被定价的期权；一旦兑现，赔率很高。</li>
-        </ul>
-      </li>
-      <li><strong>五｜往哪儿看。</strong>正在演进、值得长期跟踪的几个技术方向，以及美国药企当下真金白银投在哪、在下注什么。</li>
+      <li><strong>一｜核心矛盾的两半。</strong>价值量最大的子行业是创新药；但这个行业的研发回报率长期只有个位数。这两件事同时成立，是后面所有结论的前提。</li>
+      <li><strong>二｜这些公司怎么活、怎么被定价。</strong>平台型大药企与小生物科技公司两种截然不同的生存方式，以及市场给创新药资产定价的那把尺子。</li>
+      <li><strong>三｜历史回报与两条超额路线。</strong>板块 beta 三十三年接近跑平——所以超额只能来自打法。回测里站得住的只有两条：Biotech 的利率轮动，以及大药企的左侧建仓。</li>
+      <li><strong>四｜往后看什么。</strong>正在演进、值得长期跟踪的三条技术主线，以及三个前瞻方向上各自最值得看的公司。</li>
     </ul>
   </div>
+
+  <section class="card model-card" style="border-left:3px solid #4A3328">
+    <span class="section-label text-small">执行摘要</span>
+    <h3>五个数字撑起全部结论</h3>
+    <p class="text-small data-note">前两个数字是核心矛盾的两半，第三个说明板块 beta 为什么不值得买，后两个是回测里唯一站得住的两条超额路线。每个数字对应的图表都在下面正文里。</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:16px 0 6px">
+      <div style="border:1px solid var(--border);border-radius:3px;padding:13px 15px;background:#FAF6F1">
+        <div style="font-size:1.45rem;font-weight:600;color:#4A3328;line-height:1.15">9.2 万亿</div>
+        <div class="text-small" style="margin-top:5px">美股医药 1,056 家公司总市值，<strong>创新药独占过半</strong>（约 5 万亿），第二大的创新器械约 1 万亿。</div>
+        <div class="text-small" style="color:var(--muted-foreground);margin-top:5px">→ 价值量在创新药</div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:3px;padding:13px 15px;background:#FAF6F1">
+        <div style="font-size:1.45rem;font-weight:600;color:#4A3328;line-height:1.15">IRR 7.0%</div>
+        <div class="text-small" style="margin-top:5px">大药企后期管线研发内部回报率，<strong>剔除 GLP-1 只剩 2.9%</strong>；十三年从未超过资本成本。</div>
+        <div class="text-small" style="color:var(--muted-foreground);margin-top:5px">→ 但研发本身不赚钱</div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:3px;padding:13px 15px;background:#FAF6F1">
+        <div style="font-size:1.45rem;font-weight:600;color:#4A3328;line-height:1.15">+0.8 pp/年</div>
+        <div class="text-small" style="margin-top:5px">1993 年至今三十三年，医药指数只领先标普 0.8 个百分点；<strong>超额全在 2015 年之前</strong>，此后连续十一年跑输。</div>
+        <div class="text-small" style="color:var(--muted-foreground);margin-top:5px">→ 所以板块 beta 不赚钱</div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:3px;padding:13px 15px;background:#FAF6F1">
+        <div style="font-size:1.45rem;font-weight:600;color:#4A3328;line-height:1.15">年化 19.2%</div>
+        <div class="text-small" style="margin-top:5px">BBC↔BBP 三个月动量轮动的十年回测；底层只有一个变量——<strong>两类资产对利率预期的敏感度不同</strong>。</div>
+        <div class="text-small" style="color:var(--muted-foreground);margin-top:5px">→ 路线一：Biotech 买板块 + 择时</div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:3px;padding:13px 15px;background:#FAF6F1">
+        <div style="font-size:1.45rem;font-weight:600;color:#4A3328;line-height:1.15">10 倍</div>
+        <div class="text-small" style="margin-top:5px">大药企落难时的左侧建仓，持到管线兑现峰值；<strong>右侧介入只有 2–3 倍且必须择时退出</strong>。</div>
+        <div class="text-small" style="color:var(--muted-foreground);margin-top:5px">→ 路线二：大药企必须选个股</div>
+      </div>
+    </div>
+    <p class="text-small source-note">五个数字的出处、口径与失效条件分别见下方对应模块；市场规模与支付结构、创新器械、方向排序与交叉验证均已下沉到附注页。</p>
+  </section>
+
   <div class="chapter-head">
-    <h2>1｜价值量：创新药是医药板块里价值最大的资产</h2>
+    <h2>1｜核心矛盾：价值量最大的子行业，回报率却只有个位数</h2>
     <div class="chapter-lede">
       <ul>
-        <li><strong>美股医药市值 Top 20 里，创新药企 12 家、占总市值七成</strong>，头部是礼来（约 1 万亿美元）、强生、艾伯维、默沙东、诺华。</li>
-        <li><strong>美国是全球最大的创新药市场</strong>：药品市场年规模 5,000 亿美元，是中国市场的 10 倍以上。</li>
-        <li><strong>中国正在成为全球创新药市场中越来越重要的角色</strong>，<strong>但价值要靠美国市场兑现</strong>——2023 年后对外 BD 持续增加，合同规模超越历史。但首付款之后，需要看后续的商业化兑现。</li>
+        <li><strong>价值量在创新药</strong>：美股医药 1,056 家上市公司、总市值 9.2 万亿美元，创新药占过半；市值 Top 20 里创新药企 12 家、占总市值七成。</li>
+        <li><strong>但行业研发回报率只有个位数</strong>：2025 年大药企后期管线研发 IRR 平均 7.0%，剔除 GLP-1 只剩 2.9%——十三年从未超过资本成本。</li>
+        <li><strong>进入临床的分子最终获批不到 10%</strong>，研发周期 5–10 年；能赚大钱的只有少数品种——9% 的资产贡献 70% 的峰值销售。</li>
       </ul>
+      <p class="text-small" style="color:var(--muted-foreground);margin:6px 0 0">中美医疗支出总量、支付方结构差异、药品美元流向、美国药价政策与 Top 20 明细，见附注「市场与支付」。</p>
     </div>
-  </div>
-  <div class="background-grid" aria-label="全球医疗资产背景数据">
-    <section class="card background-card">
-      <span class="section-label text-small">背景 A</span>
-      <h3>核心市场医疗支出</h3>
-      <div class="chart-legend text-small" aria-hidden="true">
-        <span class="legend-item"><span class="legend-swatch is-government"></span>年度医疗支出（万亿美元，左轴）</span>
-        <span class="legend-item"><span class="legend-swatch is-oop"></span>占 GDP 比例（右轴）</span>
-      </div>
-      <div class="chart-wrap">
-        <svg class="spend-chart" viewBox="0 0 900 350" role="img" aria-labelledby="spend-chart-title spend-chart-desc">
-          <title id="spend-chart-title">2023 年核心市场医疗支出及其占 GDP 比例</title>
-          <desc id="spend-chart-desc">柱状图显示美国、中国、德国、日本、英国、法国的年度医疗支出，折线图显示各市场医疗支出占 GDP 比例。</desc>
-          <g aria-hidden="true">
-            <line class="chart-grid" x1="70" y1="45" x2="830" y2="45"/>
-            <line class="chart-grid" x1="70" y1="93" x2="830" y2="93"/>
-            <line class="chart-grid" x1="70" y1="141" x2="830" y2="141"/>
-            <line class="chart-grid" x1="70" y1="189" x2="830" y2="189"/>
-            <line class="chart-grid" x1="70" y1="237" x2="830" y2="237"/>
-            <line class="chart-grid" x1="70" y1="285" x2="830" y2="285"/>
-
-            <text class="chart-axis" x="58" y="49" text-anchor="end">5.0</text>
-            <text class="chart-axis" x="58" y="97" text-anchor="end">4.0</text>
-            <text class="chart-axis" x="58" y="145" text-anchor="end">3.0</text>
-            <text class="chart-axis" x="58" y="193" text-anchor="end">2.0</text>
-            <text class="chart-axis" x="58" y="241" text-anchor="end">1.0</text>
-            <text class="chart-axis" x="58" y="289" text-anchor="end">0</text>
-
-            <text class="chart-axis" x="842" y="49">20%</text>
-            <text class="chart-axis" x="842" y="97">16%</text>
-            <text class="chart-axis" x="842" y="145">12%</text>
-            <text class="chart-axis" x="842" y="193">8%</text>
-            <text class="chart-axis" x="842" y="241">4%</text>
-            <text class="chart-axis" x="842" y="289">0%</text>
-
-            <rect class="chart-bar" x="91" y="62.8" width="58" height="222.2" rx="5"/>
-            <rect class="chart-bar" x="221" y="232.7" width="58" height="52.3" rx="5"/>
-            <rect class="chart-bar" x="351" y="259.5" width="58" height="25.5" rx="5"/>
-            <rect class="chart-bar" x="481" y="263.3" width="58" height="21.7" rx="5"/>
-            <rect class="chart-bar" x="611" y="267.2" width="58" height="17.8" rx="5"/>
-            <rect class="chart-bar" x="741" y="268.1" width="58" height="16.9" rx="5"/>
-
-            <text class="chart-value" x="120" y="55" text-anchor="middle">4.63</text>
-            <text class="chart-value" x="250" y="225" text-anchor="middle">1.09</text>
-            <text class="chart-value" x="380" y="252" text-anchor="middle">0.53</text>
-            <text class="chart-value" x="510" y="256" text-anchor="middle">0.45</text>
-            <text class="chart-value" x="640" y="260" text-anchor="middle">0.37</text>
-            <text class="chart-value" x="770" y="261" text-anchor="middle">0.35</text>
-
-            <polyline class="chart-line" points="120,84.7 250,213.7 380,144.1 510,156.1 640,153.1 770,146.8"/>
-            <circle class="chart-dot" cx="120" cy="84.7" r="5"/>
-            <circle class="chart-dot" cx="250" cy="213.7" r="5"/>
-            <circle class="chart-dot" cx="380" cy="144.1" r="5"/>
-            <circle class="chart-dot" cx="510" cy="156.1" r="5"/>
-            <circle class="chart-dot" cx="640" cy="153.1" r="5"/>
-            <circle class="chart-dot" cx="770" cy="146.8" r="5"/>
-
-            <text class="chart-value" x="120" y="76" text-anchor="middle">16.69%</text>
-            <text class="chart-value" x="250" y="205" text-anchor="middle">5.94%</text>
-            <text class="chart-value" x="380" y="135" text-anchor="middle">11.74%</text>
-            <text class="chart-value" x="510" y="147" text-anchor="middle">10.74%</text>
-            <text class="chart-value" x="640" y="144" text-anchor="middle">10.99%</text>
-            <text class="chart-value" x="770" y="138" text-anchor="middle">11.52%</text>
-
-            <text class="chart-label" x="120" y="312" text-anchor="middle">美国</text>
-            <text class="chart-label" x="250" y="312" text-anchor="middle">中国</text>
-            <text class="chart-label" x="380" y="312" text-anchor="middle">德国</text>
-            <text class="chart-label" x="510" y="312" text-anchor="middle">日本</text>
-            <text class="chart-label" x="640" y="312" text-anchor="middle">英国</text>
-            <text class="chart-label" x="770" y="312" text-anchor="middle">法国</text>
-          </g>
-        </svg>
-      </div>
-      <p class="source-note text-small">Source：<a href="https://apps.who.int/nha/database" target="_blank" rel="noopener noreferrer">WHO Global Health Expenditure Database</a>，2023 年经常性医疗支出，current US$。</p>
-    </section>
-
-    <section class="card background-card">
-      <span class="section-label text-small">背景 B</span>
-      <h3>中美支付方结构</h3>
-      <div class="payer-visual" role="img" aria-label="2023年支付结构：美国政府及公共强制保险51.7%，商业保险32.4%，个人自付10.9%，其他4.9%；中国政府及社会医保57.1%，商业保险7.4%，个人自付32.2%，其他3.4%">
-        <div class="payer-row">
-          <strong>美国</strong>
-          <div class="payer-bar">
-            <span class="payer-segment-government" style="width:51.7%" title="政府及公共强制保险 51.7%">51.7%</span>
-            <span class="payer-segment-commercial" style="width:32.4%" title="商业保险 32.4%">32.4%</span>
-            <span class="payer-segment-oop" style="width:10.9%" title="个人自付 10.9%">10.9%</span>
-            <span class="payer-segment-other" style="width:4.9%" title="其他 4.9%"></span>
-          </div>
-        </div>
-        <div class="payer-row">
-          <strong>中国</strong>
-          <div class="payer-bar">
-            <span class="payer-segment-government" style="width:57.1%" title="政府及社会医保 57.1%">57.1%</span>
-            <span class="payer-segment-commercial" style="width:7.4%" title="商业保险 7.4%"></span>
-            <span class="payer-segment-oop" style="width:32.2%" title="个人自付 32.2%">32.2%</span>
-            <span class="payer-segment-other" style="width:3.4%" title="其他 3.4%"></span>
-          </div>
-        </div>
-        <div class="payer-legend text-small" aria-hidden="true">
-          <span class="legend-item"><span class="legend-swatch is-government"></span>政府及公共强制保险</span>
-          <span class="legend-item"><span class="legend-swatch is-commercial"></span>商业保险</span>
-          <span class="legend-item"><span class="legend-swatch is-oop"></span>个人自付</span>
-          <span class="legend-item"><span class="legend-swatch"></span>其他</span>
-        </div>
-      </div>
-      <p class="source-note text-small">Source：<a href="https://apps.who.int/nha/database" target="_blank" rel="noopener noreferrer">WHO Global Health Expenditure Database</a>，2023 年融资安排口径。</p>
-    </section>
-
-    <section class="card background-card">
-      <span class="section-label text-small">背景 C</span>
-      <h3>美国的药品美元流向谁</h3>
-      <p class="text-small data-note">以一支名义标价 500 美元的胰岛素为例。名义标价不是任何一方拿到的钱：真正流入产业链的现金只有 211 美元，其余 289 美元以返利和各类费用的形式回流。<strong>结构只需要记一条：这 211 美元里制造商留下约一半。</strong></p>
-
-      <div class="dollar-head">
-        <div>
-          <span class="text-small">名义标价（WAC）</span>
-          <strong>$500</strong>
-          <span class="text-small">其中 $289（57.8%）是返利与各类费用</span>
-        </div>
-        <div class="dollar-arrow" aria-hidden="true">➜</div>
-        <div>
-          <span class="text-small">实际支付现金</span>
-          <strong>$211</strong>
-          <span class="text-small">患者 $100 ＋ 雇主/健康计划 $111</span>
-        </div>
-      </div>
-
-      <p class="text-small chart-label">这 $211 由谁留存</p>
-      <div class="split-bar" role="img" aria-label="211美元现金留存分配：制造商52.1%，PBM 37.6%，药房9.1%，批发商1.2%">
-        <span class="seg-1" style="width:52.1%" title="制造商 $110，占实际现金 52.1%">制造商 52.1%</span>
-        <span class="seg-5" style="width:37.6%" title="PBM $79.3，占实际现金 37.6%">PBM 37.6%</span>
-        <span class="seg-2" style="width:9.1%" title="药房 $19.3，占实际现金 9.1%">药房 9.1%</span>
-        <span class="seg-3" style="width:1.2%" title="批发商 $2.5，占实际现金 1.2%"></span>
-      </div>
-
-      <div class="counter-note">
-        <p class="text-small"><strong>制造商保留约 50% 的实际现金</strong>（$110 / $211）——这是创新药能沉淀最大价值量的支付端基础；把名义标价当市场空间会高估 2.4 倍（500 ÷ 211）。</p>
-      </div>
-      <p class="text-small source-note">Source：用户《24Q1 医药投资策略》P8 左图，原始出处标注为公司数据、高盛全球投资研究部；留存金额由图中标注轧差计算。</p>
-    </section>
-
-    <section class="card background-card">
-      <span class="section-label text-small">背景 D</span>
-      <h3>美国药价政策：已经落地且不可逆，但名义降幅不等于收入下降</h3>
-      <p class="text-small data-note">政策已从「会不会来」变成「已经落地且没有退路」——三个循环共 40 个药定价完毕，最高法院 2026-05-18 拒审、行业宪法挑战失败，法律没有日落条款；17 家大药企在 2026-04 前全部签了 MFN 自愿协议，覆盖约 86% 的品牌市场。但落地半年后的财报证据是分化的：<strong>名义折扣 38%–84%，实际收入影响却小得多，甚至符号相反</strong>——Imbruvica 美国销售 −37.8%，而 Eliquis 反而 +22% 且公司上调全年指引。原因就在上面背景 C 这张图里：MFP 定的是净价，而净价早已被 57.8% 的返利与费用压到远低于标价，被谈掉的很大一部分本来就不在制造商口袋里。真正在扣利润的是三件「非谈判」的事：<strong>Part D 重构的厂家折扣、MFN 协议的价格让步、以及支付端的结构性收缩</strong>。CBO 已于 2026-07-29 正式承认谈判节省低于原估、而 Part D 重构成本高于原估。</p>
-
-      <div class="stat-strip">
-        <div><span class="text-small">已定价／已选定药品</span><strong>40 个</strong><span class="text-small">2026 年 10 → 2027 年 15 → 2028 年 15；2029 年起每年最多 20，2030 年累计约 60</span></div>
-        <div><span class="text-small">名义折扣区间（vs 标价）</span><strong>−38% ~ −84%</strong><span class="text-small">但生效首年只有一个品种出现清晰下滑</span></div>
-        <div><span class="text-small">2025 年全美处方药支出</span><strong>9,152 亿美元</strong><span class="text-small">同比 +12.7%，其中用量 +9.3%、价格仅 +1.2%</span></div>
-      </div>
-
-      <p class="text-small chart-label">第一块｜四条政策线各自到哪一步了</p>
-      <div class="table-responsive">
-        <table class="table table-sm company-table">
-          <thead><tr><th>政策线</th><th>状态</th><th class="text-nowrap">关键时点</th><th>对公司的实际作用</th></tr></thead>
-          <tbody>
-            <tr><td><strong>IRA Medicare 谈判</strong></td><td>已生效并按法定节奏放大</td><td>第一批 2026-01-01；第二批 2027-01-01；第三批 2028-01-01</td><td>第三批首次纳入 Part B，涉及支出 270 亿美元（约占 Medicare 药品支出 6%）。<strong>可预测、按名单来</strong>——真正的问题是规模每年扩大</td></tr>
-            <tr style="background:#FAF6F1"><td><strong>MFN 自愿协议</strong></td><td>17 家全部签署，覆盖约 86% 品牌市场</td><td>2025-09 起陆续，末家 2026-04-23；<strong>协议期仅 3 年</strong></td><td><strong>本轮最被低估的一项。</strong>不经国会、不经规则程序、条款保密。礼来 2026 年「全球价格低双位数到中双位数下降」的指引来自这里，不来自 IRA。风险在 2029-01 到期后的续约条件</td></tr>
-            <tr><td><strong>Section 232 关税</strong></td><td>已生效，但签了 MFN 的大药企税率是 0</td><td>2026-07-31（17 家）／2026-09-29（其余）</td><td>专利药默认 100%，MFN＋在美建厂 ＝ 0%（至 2029-01-20）。<strong>大药企当期风险接近归零，差异化消失</strong>；真正暴露的是仿制药与 CDMO（2028-08 起阶梯至 100%、再至 200%）</td></tr>
-            <tr style="background:#F5F1EC"><td><strong>Part D 重构</strong></td><td>已生效，最少被讨论</td><td>自付上限 2025 年起，2026 年为 2,100 美元</td><td><strong>对报表影响最直接的一项。</strong>厂家在两段均给约 20% 折扣，作用于全部适用药而非名单上的 40 个：安进 Enbrel 净价单季 −35% 并计提 Otezla 12 亿美元减值，吉利德 2025 年吸收 11 亿美元逆风</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="text-small chart-label" style="margin-top:16px">第二块｜生效半年的实际结果：伤害是分化的，不是统一的</p>
-      <div class="table-responsive">
-        <table class="table table-sm company-table">
-          <thead><tr><th>品种（公司）</th><th>2026 年二季度</th><th>归因</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Imbruvica</strong>（艾伯维）</td><td style="color:#8C4A57"><strong>美国 −37.8%</strong> 至 3.37 亿美元；全球 −29.4%</td><td>公司明确归因谈判定价＋竞争。<strong>唯一一个干净的受害者</strong></td></tr>
-            <tr style="background:#FAF6F1"><td><strong>Eliquis</strong>（BMS）</td><td><strong>+22%</strong> 至 44.8 亿美元，需求 +21%；全年指引由 +10–15% 上调至 +20–25%</td><td>MFP 替换掉的是原本高返利的结构，净价降幅远小于标价；辉瑞端同品种运营 +19%，归因美国<strong>净价上升</strong></td></tr>
-            <tr><td><strong>Stelara</strong>（强生）</td><td>约 760bps 拖累</td><td>主因是生物类似药（单列 460bps），政策影响被专利到期掩盖</td></tr>
-            <tr><td><strong>Enbrel</strong>（安进）</td><td>净价单季 −35%</td><td><strong>不是谈判</strong>，是 Part D 重构＋340B 结构</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="counter-note">
-        <p class="text-small" style="margin:0"><strong>这张表是整段最重要的一块：「谈判折扣 X%」不能翻译成「收入下降 X%」，甚至符号都可能相反。</strong>传导系数低的原因是结构性的——MFP 定净价，而标价里 57.8% 本来就是返利与费用。卖方对第三批的估算同向印证：Medicare 收入仅占相关公司 2027 年预测总收入的 0–3%<span style="color:#7A4E3B">（该口径来自二手引用，待核）</span>。</p>
-      </div>
-
-      <p class="text-small chart-label" style="margin-top:16px">第三块｜风险敞口排序：集中度 × Medicare 占比，缺一个乘数就没有意义</p>
-      <div class="table-responsive">
-        <table class="table table-sm company-table">
-          <thead><tr><th>公司</th><th>涉及品种（批次）</th><th class="text-end">占公司总收入</th><th>叠加的第二重风险</th></tr></thead>
-          <tbody>
-            <tr style="background:#F5E4E6"><td><strong>1 诺和诺德</strong></td><td>司美格鲁肽三个品牌（第二批，2027）</td><td class="text-end"><strong>73.9%</strong></td><td><strong>唯一一个政策足以改变公司主线的名字</strong>；2026 年指引已给出销售／利润 −5% ~ −13%。注意 Wegovy 当前只有 1.2% 的处方走 Part D，但 Medicare 肥胖覆盖 2026 年起启动</td></tr>
-            <tr style="background:#F3E9DE"><td><strong>2 BMS</strong></td><td>Eliquis（一）＋Pomalyst（二）＋Orencia（三）</td><td class="text-end"><strong>43.2%</strong></td><td><strong>唯一三批全中</strong>，且 Eliquis 美国专利 2028 到期——最纯粹的叠加案例</td></tr>
-            <tr style="background:#F3E9DE"><td><strong>3 默沙东</strong></td><td>Januvia／Janumet（一、二）＝ 仅约 2%</td><td class="text-end">2%<span class="text-small">（真实敞口 <strong>49%</strong>）</span></td><td>真正的数字是 Keytruda 317 亿美元：<strong>孤儿药豁免只把它推迟到 2029 年定价，而美国化合物专利 2028-12 到期——两件事落在同一年</strong></td></tr>
-            <tr><td><strong>4 吉利德</strong></td><td>Biktarvy（三，2028）</td><td class="text-end">48.6%</td><td>美国大市值里单品集中度最高，且 HIV 偏 Medicaid／340B，政府支付占比大概率最高</td></tr>
-            <tr><td><strong>5 诺华</strong></td><td>Cosentyx＋Kisqali（均第三批）</td><td class="text-end">21.0%</td><td>叠加 Entresto——诺华史上最大专利到期</td></tr>
-            <tr><td><strong>6 阿斯利康</strong></td><td>Farxiga（一，已生效）＋Calquence（二）</td><td class="text-end">20.3%</td><td>Farxiga 已按 −68% 重新定价，占公司 14%</td></tr>
-            <tr><td><strong>7 安进</strong></td><td>Enbrel（一）＋Otezla（二）</td><td class="text-end">12.2%</td><td>集中度最小，但<strong>唯一把政策影响做成会计数字的公司</strong>：Otezla 12 亿美元减值明确关联价格设定</td></tr>
-            <tr style="background:#F7F4EF"><td><strong>8 礼来</strong></td><td>Verzenio＋Trulicity（均第三批）</td><td class="text-end">约 15%</td><td><strong>替加泰德没有被选入第三批</strong>，谈判敞口只剩两个衰退期老品种。它真正的让步来自 MFN——指引 2026 年全球价格低双位数到中双位数下降。<strong>风险调整后是大市值里暴露最低的</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="ratio-check">
-        <p class="text-small" style="margin:0 0 5px"><strong>两个必须纠正的直觉。①「被谈判的是 GLP-1」——被谈判的是诺和诺德的司美格鲁肽，礼来的替加泰德没有进任何一批名单。</strong>礼来在第三批里出现的是 Trulicity 和 Verzenio，这是这个误解的来源。</p>
-        <p class="text-small" style="margin:0 0 5px"><strong>② 集中度不等于暴露。</strong>Vertex 有 86% 的收入压在 Trikafta 上却零个品种被选中，因为 CF 人群年轻、以商保为主；再生元的 Eylea 因生物类似药进入而<strong>法定永久失去谈判资格</strong>——它的痛来自竞争，不来自政策。艾伯维也被高估：Botox 美容那一半（26 亿美元）是自费、结构性免疫。<strong>缺了 Medicare 占比这个乘数，集中度是一个无意义的数字。</strong></p>
-        <p class="text-small" style="margin:0"><strong>往后看，最该盯的时点是 2027 年而不是 2026 年：</strong>Part D 保费被行政手段压了两年（2026 年独立处方计划月均保费反而从 38.31 降到 34.50 美元），但该稳定计划在 2026 年末终止，2027 年全国平均投标价已定为 296.05 美元、约 +24%；同期计划数已从 2023 年的 804 个降到 360 个（三年 −55%，Elevance 全线退出、影响约 40 万人）。<strong>保费一次性跳涨会把药价重新推回政治议程，而 2027 恰好是第二批生效年。</strong></p>
-      </div>
-      <p class="text-small source-note">Source｜2026-08-11 网络检索汇总：CMS／HHS ASPE（谈判价与名单）、KFF（Part D 处方份额、保费与计划数）、Avalere／Milliman（批次分析）、CBO 2026-07-29 致众院委员会函与 2026-02 baseline、白宫 CEA 2026-05 报告、各公司 2025 年报与 2026 年二季报、Section 232 Proclamation 11020 相关律所 alert、AJHP 全美处方药支出。<strong>口径提醒：本段的 9,152 亿美元（含非零售渠道的处方药总支出）与上文背景 A 的「药品市场年规模 5,000 亿美元」不是同一口径，两个数不可互相替代、不可用于同一分母。</strong>敞口表的「占公司总收入」为 2025 年报告数（Trulicity、Erleada 等单品为估算，已不单列）；「Medicare 占比」一列各公司几乎均不披露，只能用处方份额与受益人数代理——这是本段最大的数据缺口，也是排序里最可能出错的一环。</p>
-      <p class="text-small source-note"><strong>待核实：</strong>司美格鲁肽存在 274 美元（CMS／IRA 谈判价）与 245 美元（白宫／MFN 协议价，另配 50 美元月自付）两个数字，属两条不同通路，引用须注明；第二批节省有「每年 120 亿美元」与「85 亿美元（2024 反事实，−36%）」两个未调和口径；第五巡回法院 No. 25-50661 是否已出判未确认；第三批中 Part B 药数量有 4 家（Avalere）与 5 家（Milliman）两种算法。本次 cms.gov 不可直抓，全部 CMS 数字经二手来源交叉确认，非原始文件。</p>
-    </section>
   </div>
 
   <section class="card model-card">
@@ -1278,75 +1103,75 @@
   </section>
 
   <section class="card model-card">
-    <span class="section-label text-small">板块头部</span>
-    <h3>美股医药 Top 20：市值、主业与 2026E PE</h3>
-    <p class="text-small data-note">按市值排名的美股医药前 20 名。这张表回答一个结构问题：全球最大的 20 家医药公司里，药、械、工具、保险各占多少——答案是药品占七成三，纯器械只有 4 家。</p>
+    <span class="section-label text-small">资本回报</span>
+    <h3>资本回报：行业研发 IRR 个位数、获批率不到 8%，高 ROIC 属于成功者</h3>
+    <p class="text-small data-note">三个数字层层递进：全行业往研发里投的钱预期赚多少（德勤 IRR，前瞻、含失败）→ 一个分子从 I 期走到获批的概率（BIO 成功率）→ 已经成功的公司账面回报有多高（ROIC，历史、只有幸存者）。三个口径量的不是同一件事，只能并列，不能相减。</p>
 
-      <div class="table-responsive">
-        <table class="table table-sm company-table wide-table is-xl">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>公司（Ticker）</th>
-              <th>主业</th>
-              <th>业态</th>
-              <th class="text-end">市值</th>
-              <th class="text-end">TTM 收入</th>
-              <th class="text-end">TTM 净利润</th>
-              <th class="text-end">2026E PE</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td class="text-nowrap">Eli Lilly（LLY）</td><td>GLP-1 减重与糖尿病、肿瘤</td><td>药品</td><td class="text-end">$999.64B</td><td class="text-end">$72.25B</td><td class="text-end">$25.28B</td><td class="text-end">32.46</td></tr>
-            <tr><td>2</td><td class="text-nowrap">Johnson &amp; Johnson（JNJ）</td><td>创新药＋医疗器械双主业</td><td>药品</td><td class="text-end">$604.16B</td><td class="text-end">$97.93B</td><td class="text-end">$21.04B</td><td class="text-end">21.59</td></tr>
-            <tr><td>3</td><td class="text-nowrap">AbbVie（ABBV）</td><td>免疫（Skyrizi/Rinvoq）、医美</td><td>药品</td><td class="text-end">$431.92B</td><td class="text-end">$64.39B</td><td class="text-end">$6.27B</td><td class="text-end">17.31</td></tr>
-            <tr><td>4</td><td class="text-nowrap">UnitedHealth（UNH）</td><td>商业保险＋Optum（含 PBM）</td><td>保险与医疗服务</td><td class="text-end">$374.56B</td><td class="text-end">$450.13B</td><td class="text-end">$14.12B</td><td class="text-end">20.83</td></tr>
-            <tr><td>5</td><td class="text-nowrap">Merck &amp; Co（MRK）</td><td>肿瘤（Keytruda）、疫苗</td><td>药品</td><td class="text-end">$312.19B</td><td class="text-end">$66.57B</td><td class="text-end">$3.17B</td><td class="text-end">46.27 ⚠</td></tr>
-            <tr><td>6</td><td class="text-nowrap">Novartis（NVS）</td><td>处方药，已剥离仿制药 Sandoz</td><td>药品</td><td class="text-end">$291.64B</td><td class="text-end">$56.69B</td><td class="text-end">$12.76B</td><td class="text-end">17.50</td></tr>
-            <tr><td>7</td><td class="text-nowrap">AstraZeneca（AZN）</td><td>肿瘤、心肾代谢、呼吸</td><td>药品</td><td class="text-end">$239.46B</td><td class="text-end">$61.37B</td><td class="text-end">$10.45B</td><td class="text-end">15.30</td></tr>
-            <tr><td>8</td><td class="text-nowrap">Thermo Fisher（TMO）</td><td>生命科学工具、CDMO（Patheon）</td><td>生命科学工具</td><td class="text-end">$211.05B</td><td class="text-end">$46.34B</td><td class="text-end">$6.97B</td><td class="text-end">22.72</td></tr>
-            <tr><td>9</td><td class="text-nowrap">Novo Nordisk（NVO）</td><td>GLP-1 减重与糖尿病</td><td>药品</td><td class="text-end">$205.77B ※</td><td class="text-end">$50.57B ※</td><td class="text-end">$18.81B ※</td><td class="text-end">14.61 ⚠</td></tr>
-            <tr><td>10</td><td class="text-nowrap">Amgen（AMGN）</td><td>生物药、罕见病</td><td>药品</td><td class="text-end">$203.26B</td><td class="text-end">$37.22B</td><td class="text-end">$7.80B</td><td class="text-end">16.85</td></tr>
-            <tr><td>11</td><td class="text-nowrap">Abbott（ABT）</td><td>诊断＋心血管＋CGM＋营养</td><td>器械与诊断</td><td class="text-end">$182.24B</td><td class="text-end">$46.59B</td><td class="text-end">$5.40B</td><td class="text-end">19.09</td></tr>
-            <tr><td>12</td><td class="text-nowrap">Gilead（GILD）</td><td>抗病毒（HIV/HBV）、肿瘤</td><td>药品</td><td class="text-end">$161.24B</td><td class="text-end">$29.74B</td><td class="text-end">$9.22B</td><td class="text-end">n/a ⚠</td></tr>
-            <tr><td>13</td><td class="text-nowrap">Pfizer（PFE）</td><td>肿瘤、疫苗、抗感染</td><td>药品</td><td class="text-end">$141.66B</td><td class="text-end">$63.70B</td><td class="text-end">$4.33B</td><td class="text-end">8.43</td></tr>
-            <tr><td>14</td><td class="text-nowrap">Danaher（DHR）</td><td>生命科学工具、体外诊断</td><td>生命科学工具</td><td class="text-end">$138.43B</td><td class="text-end">$25.11B</td><td class="text-end">$4.00B</td><td class="text-end">23.14</td></tr>
-            <tr><td>15</td><td class="text-nowrap">CVS Health（CVS）</td><td>药房＋PBM（Caremark）＋Aetna 保险</td><td>保险与医疗服务</td><td class="text-end">$132.36B</td><td class="text-end">$405.62B</td><td class="text-end">$2.93B</td><td class="text-end">13.92</td></tr>
-            <tr><td>16</td><td class="text-nowrap">Intuitive Surgical（ISRG）</td><td>手术机器人（达芬奇）</td><td>器械与诊断</td><td class="text-end">$131.58B</td><td class="text-end">$11.03B</td><td class="text-end">$3.14B</td><td class="text-end">34.49</td></tr>
-            <tr><td>17</td><td class="text-nowrap">Bristol Myers Squibb（BMY）</td><td>肿瘤、免疫、CAR-T</td><td>药品</td><td class="text-end">$130.83B</td><td class="text-end">$49.19B</td><td class="text-end">$9.28B</td><td class="text-end">9.39</td></tr>
-            <tr><td>18</td><td class="text-nowrap">Stryker（SYK）</td><td>骨科植入、手术设备</td><td>器械与诊断</td><td class="text-end">$128.47B</td><td class="text-end">$25.84B</td><td class="text-end">$3.73B</td><td class="text-end">22.31</td></tr>
-            <tr><td>19</td><td class="text-nowrap">Vertex（VRTX）</td><td>CF、非阿片镇痛</td><td>药品</td><td class="text-end">$121.27B</td><td class="text-end">$12.59B</td><td class="text-end">$4.41B</td><td class="text-end">25.31</td></tr>
-            <tr><td>20</td><td class="text-nowrap">Medtronic（MDT）</td><td>植入、神经调控、糖尿病</td><td>器械与诊断</td><td class="text-end">$109.12B</td><td class="text-end">$36.36B</td><td class="text-end">$4.80B</td><td class="text-end">14.32 ⚠</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-    <p class="text-small chart-label">Top 20 市值按业态拆分（合计 USD 5,250.85B）</p>
-    <div class="split-bar" role="img" aria-label="Top20市值业态拆分：药品73.2%，器械与诊断10.5%，保险与医疗服务9.7%，生命科学工具6.7%">
-      <span class="seg-1" style="width:73.2%" title="药品 12 家，USD 3,843.04B，73.2%">药品 12 家｜73.2%</span>
-      <span class="seg-2" style="width:10.5%" title="器械与诊断 4 家，USD 551.41B，10.5%">器械 10.5%</span>
-      <span class="seg-5" style="width:9.7%" title="保险与医疗服务 2 家，USD 506.92B，9.7%">保险 9.7%</span>
-      <span class="seg-3" style="width:6.7%" title="生命科学工具 2 家，USD 349.48B，6.7%">工具</span>
+    <p class="text-small chart-label">德勤：全球大药企后期管线研发 IRR（第 16 版，2026-05-04 发布）</p>
+    <div class="table-responsive">
+      <table class="table table-sm company-table">
+        <thead><tr><th>指标</th><th class="text-end">数值</th><th>说明</th></tr></thead>
+        <tbody>
+              <tr><td>2025 年平均静态 IRR</td><td class="text-end"><strong>7.0%</strong></td><td>13 年序列（2013→2025，%）：6.5→7.2→6.1→5.5→5.4→3.6→1.5→2.3→6.8→1.2→4.3→5.9→7.0——13 年里从未达到文献常用资本成本 10.5%</td></tr>
+              <tr><td>2025 年中位 IRR</td><td class="text-end">4.0%</td><td>均值被 GLP-1 拉高：GLP-1/GIP 资产占样本预测现金流约 38%</td></tr>
+              <tr><td>剔除 GLP-1/GIP 后平均</td><td class="text-end">2.9%</td><td>拿掉一个品类，全行业回报贴地</td></tr>
+              <tr><td>单资产研发成本</td><td class="text-end">$2,671M</td><td>discovery → launch，已含同期失败资产成本摊销（2024 年为 $2,229M）</td></tr>
+              <tr><td>单资产平均预测峰值销售</td><td class="text-end">$598M/年</td><td>剔 GLP-1 后 $353M；53% 的资产峰值预测不足 $250M</td></tr>
+              <tr><td>研发周期</td><td class="text-end">100.4 个月</td><td>Phase I → 递交，约 8.4 年</td></tr>
+        </tbody>
+      </table>
     </div>
+    <p class="text-small source-note">附注｜Deloitte《Measuring the return from pharmaceutical innovation》第 16 版（2026-05-04 发布）。样本＝按 2020 年研发支出选出的全球前 20 大生物药企（名单不公开）的后期管线，前瞻测算、含失败成本；收入预测源 2023 年起为 Evaluate Pharma（此前 GlobalData，序列有数据商断点）；历年数字会追溯重述（±0.2–0.4pp）；未披露所用 WACC；获批资产移出管线的机制会机械压低 IRR。价值高度集中：9% 的资产（54 个重磅预测）贡献 70% 的管线价值。文献对照：单药研发成本估计区间 USD 161M–4,540M（Schlander 等 2021 汇总 45 个独立估计），各文献币种基年不同，只作区间参照、不作运算。</p>
+
+    <p class="text-small chart-label" style="margin-top:18px">BIO：临床各阶段转化成功率（%，全适应症）——进入临床的分子，最终获批的不到 8%</p>
+    <div role="img" aria-label="临床各阶段成功率：I期到II期52.0%，II期到III期28.9%，III期到递交57.8%，递交到获批90.6%，综合获批率7.9%">
+      <div class="perf-row is-drug"><span class="text-small">I 期 → II 期</span><span class="perf-track"><span class="perf-fill" style="width:52%"></span></span><span class="perf-val text-small">52.0</span></div>
+      <div class="perf-row is-drug"><span class="text-small">II 期 → III 期（最矮的门）</span><span class="perf-track"><span class="perf-fill" style="width:28.9%"></span></span><span class="perf-val text-small">28.9</span></div>
+      <div class="perf-row is-drug"><span class="text-small">III 期 → 递交</span><span class="perf-track"><span class="perf-fill" style="width:57.8%"></span></span><span class="perf-val text-small">57.8</span></div>
+      <div class="perf-row is-drug"><span class="text-small">递交 → 获批</span><span class="perf-track"><span class="perf-fill" style="width:90.6%"></span></span><span class="perf-val text-small">90.6</span></div>
+      <div class="perf-row is-all"><span class="text-small">I 期 → 获批（综合 LOA）</span><span class="perf-track"><span class="perf-fill" style="width:7.9%"></span></span><span class="perf-val text-small">7.9</span></div>
+    </div>
+    <p class="text-small">100 个进入 I 期的分子约 8 个获批（100 → 52 → 15 → 8.7 → 7.9），平均临床＋审评周期约 10.5 年。最矮的门在 II 期（28.9%）：I 期考化学与工程（能不能安全给药），II 期考生物学（靶点在人身上对不对）——这道门十年没变。适应症之间差 4 倍以上：血液 23.9%、罕见病 17.0%，肿瘤只有 5.3%。</p>
+    <p class="text-small source-note">附注｜BIO / Informa Pharma Intelligence / QLS《Clinical Development Success Rates and Contributing Factors 2011–2020》（2021-02 发布）。样本＝2011–2020 年 1,779 家企业发起项目的 12,728 次临床阶段转化（9,704 个项目），不含学术机构发起；LOA＝Phase I 至获批的综合概率。与 2006–2015 基线版的 9.6% 不可直接相比——报告自陈差异主要来自数据库审查更严格，而非真实恶化。</p>
+
+    <p class="text-small chart-label" style="margin-top:18px">公司层｜大药企最新财年 ROIC（%），柱长以最高值 39.65% 归一</p>
+    <div role="img" aria-label="药企最新财年ROIC排序：礼来39.65%，诺和诺德38.68%，罗氏27.94%，默沙东23.40%，诺华22.75%，强生21.75%，阿斯利康16.42%，第一三共15.51%，BMS 13.99%，艾伯维12.43%，赛诺菲6.11%，辉瑞5.76%，武田5.08%">
+      <div class="perf-row is-drug"><span class="text-small">Eli Lilly（LLY）</span><span class="perf-track"><span class="perf-fill" style="width:100%"></span></span><span class="perf-val text-small">39.65</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Novo Nordisk（NVO）</span><span class="perf-track"><span class="perf-fill" style="width:97.6%"></span></span><span class="perf-val text-small">38.68</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Roche（RHHBY）</span><span class="perf-track"><span class="perf-fill" style="width:70.5%"></span></span><span class="perf-val text-small">27.94</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Merck &amp; Co（MRK）</span><span class="perf-track"><span class="perf-fill" style="width:59.0%"></span></span><span class="perf-val text-small">23.40</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Novartis（NVS）</span><span class="perf-track"><span class="perf-fill" style="width:57.4%"></span></span><span class="perf-val text-small">22.75</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Johnson &amp; Johnson（JNJ）</span><span class="perf-track"><span class="perf-fill" style="width:54.9%"></span></span><span class="perf-val text-small">21.75</span></div>
+      <div class="perf-row is-drug"><span class="text-small">AstraZeneca（AZN）</span><span class="perf-track"><span class="perf-fill" style="width:41.4%"></span></span><span class="perf-val text-small">16.42</span></div>
+      <div class="perf-row is-drug"><span class="text-small">第一三共（4568.T）</span><span class="perf-track"><span class="perf-fill" style="width:39.1%"></span></span><span class="perf-val text-small">15.51</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Bristol Myers Squibb（BMY）</span><span class="perf-track"><span class="perf-fill" style="width:35.3%"></span></span><span class="perf-val text-small">13.99</span></div>
+      <div class="perf-row is-drug"><span class="text-small">AbbVie（ABBV）</span><span class="perf-track"><span class="perf-fill" style="width:31.3%"></span></span><span class="perf-val text-small">12.43</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Sanofi（SNY）</span><span class="perf-track"><span class="perf-fill" style="width:15.4%"></span></span><span class="perf-val text-small">6.11</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Pfizer（PFE）</span><span class="perf-track"><span class="perf-fill" style="width:14.5%"></span></span><span class="perf-val text-small">5.76</span></div>
+      <div class="perf-row is-drug"><span class="text-small">Takeda（TAK）</span><span class="perf-track"><span class="perf-fill" style="width:12.8%"></span></span><span class="perf-val text-small">5.08</span></div>
+    </div>
+
     <div class="stat-strip">
-      <div><span class="text-small">药品｜12 家</span><strong>$3,843.04B</strong><span class="text-small">73.2%</span></div>
-      <div><span class="text-small">器械与诊断｜4 家</span><strong>$551.41B</strong><span class="text-small">10.5%（ABT / ISRG / SYK / MDT）</span></div>
-      <div><span class="text-small">保险与医疗服务｜2 家</span><strong>$506.92B</strong><span class="text-small">9.7%（UNH / CVS）</span></div>
-      <div><span class="text-small">生命科学工具｜2 家</span><strong>$349.48B</strong><span class="text-small">6.7%（TMO / DHR）</span></div>
+      <div><span class="text-small">药企中位｜13 家</span><strong>16.42%</strong><span class="text-small">区间 5.08–39.65</span></div>
+      <div><span class="text-small">内部极差</span><strong>7.8 倍</strong><span class="text-small">礼来 39.65 vs 武田 5.08</span></div>
+      <div><span class="text-small">出现过负 ROIC 年度</span><strong>4 / 13 家</strong><span class="text-small">MRK、PFE、BMY、AZN</span></div>
+    </div>
+    <p class="text-small">读数两点：①<strong>高 ROIC 是成功者属性、不是行业属性</strong>——同一批大药企内部极差 7.8 倍，MRK/PFE/BMY/AZN 都出现过负 ROIC 年度。②这张排序天然只包含活到今天的赢家。</p>
+
+    <div class="ratio-check">
+      <p class="text-small" style="margin:0"><strong>⛔ 口径红线：IRR 和 ROIC 不能相减。</strong>德勤 IRR 是<strong>前瞻的项目层回报</strong>——对下一批管线的期望值，失败都算在内；ROIC 是<strong>历史的公司层回报</strong>——只统计幸存者，且多数研发支出当期费用化、不进投入资本分母，分子分母双重偏向成功者。礼来 ROIC 39.65% 与行业 IRR 7.0% 同时为真、并不矛盾：前者是成功之后的账面，后者是再投一块钱的期望。跨这两个口径的任何加减或大小比较都没有含义。</p>
     </div>
 
-    <p class="text-small"><strong>与 2024 年那版 TOP30 对照，唯一一致的结论：药品的市值与收入都在数量级上压过器械</strong>，且 2026 年样本收窄后这个压制更明显。</p>
-
-    <p class="text-small source-note">Source：快照 2026-08-04 美东 09:37–09:39，<strong>盘中价非收盘价</strong>。业态归类、市值分组求和与占比均为本项目计算。<strong>与本看板「02 创新器械」表的 2026-08-03 收盘快照不同源，两处数字不应混用。</strong></p>
-    <p class="text-small source-note">⚠ 逐项提示：<strong>MRK</strong> 2026E PE 46.27 含约 USD 11.6B 一次性费用，与同业不可比；<strong>GILD</strong> FY2026 一致预期净利润为 −USD 3.39B，PE 无意义故记 n/a；<strong>MDT</strong> 财年 4 月结束，不存在严格的「2026E」，14.32 实际对应 FY2027E；<strong>NVO</strong>（※）收入与利润按隐含汇率 1 USD ≈ 6.482 DKK 折算、基准日未披露，且市值两来源相差 29%（205.77 与另一来源 159.47），若按后者 NVO 应排第 12 位；<strong>ABBV</strong>（10 家）与 <strong>VRTX</strong>（11 家）的分析师覆盖数偏低，一致预期稳定性弱于其他标的。</p>
+    <p class="text-small source-note">Source｜ROIC：Fiscal.ai 口径，经 SEC XBRL 对 5 家复算验证、差异 &lt;1.1pp。公式 NOPAT ＝ EBIT ×（1 − 有效税率），投入资本 ＝ 权益 ＋ 有息负债 − 现金 − 短期投资，除以期初期末平均。中位数、极差与归一柱长为本项目计算。</p>
   </section>
 
   <div class="chapter-head">
-    <h2>2｜商业模式：这些公司怎么生存</h2>
+    <h2>2｜商业模式：这些公司怎么生存、市场怎么给它定价</h2>
     <div class="chapter-lede">
-      <p>大 Pharma 占住微笑曲线两端做平台，Biotech 九死一生赌管线——对 biotech 而言，卖身就是成功。市场给创新药的定价锚是峰值销售倍数（V/P）。</p>
+      <p>大 Pharma 占住微笑曲线两端做平台，Biotech 九死一生赌管线——对 biotech 而言，卖身就是成功。市场给创新药的定价锚是<strong>峰值销售倍数（P/S）</strong>，注意分母是峰值销售、不是当期收入。</p>
     </div>
   </div>
+
   <section class="card model-card">
     <span class="section-label text-small">两类生存方式</span>
     <h3>大 Pharma 是平台，Biotech 是管线</h3>
@@ -1456,16 +1281,16 @@
 
   <section class="card model-card">
     <span class="section-label text-small">定价曲线</span>
-    <h3>市场怎么给创新药定价：市值 ≈ 峰值销售的几倍（V/P），随研发阶段爬升</h3>
-    <p class="text-small data-note">对单一资产做严格 DCF（净利率 40%、r＝10%、20 年现金流、8 年销售爬坡），把每个阶段的风险调整后价值除以峰值销售，得到下面这条 V/P 曲线。<strong>严格现金流最高只支撑约 2.2 倍峰值销售，出现在爬坡第 3–4 年——「市值 ≈ 峰值销售两倍」就是从这来的</strong>；市场惯例给已去风险资产 3–5 倍，超出部分是情绪与稀缺性溢价。</p>
+    <h3>市场怎么给创新药定价：市值 ≈ 峰值销售的几倍（P/S），随研发阶段爬升</h3>
+    <p class="text-small data-note">对单一资产做严格 DCF（净利率 40%、r＝10%、20 年现金流、8 年销售爬坡），把每个阶段的风险调整后价值除以峰值销售，得到下面这条 P/S 曲线。<strong>严格现金流最高只支撑约 2.2 倍峰值销售，出现在爬坡第 3–4 年——「市值 ≈ 峰值销售两倍」就是从这来的</strong>；市场惯例给已去风险资产 3–5 倍，超出部分是情绪与稀缺性溢价。</p>
 
     <div class="chart-legend text-small" aria-hidden="true">
       <span class="legend-item"><span class="legend-swatch is-s1"></span>全资持有（自研自销）</span>
       <span class="legend-item"><span class="legend-swatch is-s3"></span>license-out 后中方留存</span>
     </div>
     <div class="chart-wrap">
-      <svg class="curve-chart" viewBox="0 0 900 300" role="img" aria-labelledby="vp-title vp-desc">
-        <title id="vp-title">创新药单资产 V/P 定价曲线：从 II 期概念验证到专利到期</title>
+      <svg class="curve-chart" viewBox="0 0 900 300" role="img" aria-labelledby="ps-title vp-desc">
+        <title id="ps-title">创新药单资产 P/S 定价曲线：从 II 期概念验证到专利到期</title>
         <desc id="vp-desc">折线图。全资资产的市值对峰值销售倍数从 II 期概念验证后的 0.34 倍爬升至获批后爬坡中段的 2.24 倍最高点，专利到期回落到 0.61 倍；license-out 路径全程不到 1 倍。市场惯例带为 3 至 5 倍。</desc>
         <g aria-hidden="true">
           <rect x="60" y="30" width="800" height="96" fill="#8C4A57" fill-opacity="0.06"/>
@@ -1522,12 +1347,12 @@
       </svg>
     </div>
 
-    <p class="text-small" style="margin-top:12px">上面那条曲线回答「每个阶段值几倍」。下面把<strong>获批日</strong>这一个站位拆开，看 V/P 这笔账是怎么算出来的，再调假设看答案怎么动。注意站位：获批日只看未来 20 年现金流，答案 1.75×；曲线最高点 2.24× 是站在爬坡第 3–4 年往前看的前瞻值——站位不同，不矛盾。</p>
+    <p class="text-small" style="margin-top:12px">上面那条曲线回答「每个阶段值几倍」。下面把<strong>获批日</strong>这一个站位拆开，看 P/S 这笔账是怎么算出来的，再调假设看答案怎么动。注意站位：获批日只看未来 20 年现金流，答案 1.75×；曲线最高点 2.24× 是站在爬坡第 3–4 年往前看的前瞻值——站位不同，不矛盾。</p>
 
     <p class="text-small chart-label" style="margin-top:10px">获批日的账｜20 年销售放量 vs 累计折现净利润（基准参数：净利率 40%、r＝10%）</p>
     <div class="chart-legend text-small" aria-hidden="true">
       <span class="legend-item"><span class="legend-swatch" style="background:var(--viz-series-2);opacity:.45"></span>年销售（％峰值，柱）</span>
-      <span class="legend-item"><span class="legend-swatch is-s1"></span>累计折现净利润 ÷ 峰值销售（线，左轴）——它停在哪，V/P 就是几倍</span>
+      <span class="legend-item"><span class="legend-swatch is-s1"></span>累计折现净利润 ÷ 峰值销售（线，左轴）——它停在哪，P/S 就是几倍</span>
     </div>
     <div class="chart-wrap">
       <svg class="curve-chart" viewBox="0 0 900 300" role="img" aria-labelledby="dcfflow-title dcfflow-desc">
@@ -1574,7 +1399,7 @@
           <circle class="chart-dot" style="stroke:var(--viz-series-1)" cx="840" cy="60" r="4"/>
           <text class="chart-value" x="360" y="133" text-anchor="middle">达峰年才 1.04×</text>
           <text class="chart-value" x="520" y="66" text-anchor="middle">LOE 时 1.60×</text>
-          <text class="chart-value" x="836" y="48" text-anchor="end">终点 1.75×＝V/P</text>
+          <text class="chart-value" x="836" y="48" text-anchor="end">终点 1.75×＝P/S</text>
 
           <text class="chart-axis" x="80" y="292" text-anchor="middle">第 1 年</text>
           <text class="chart-axis" x="200" y="292" text-anchor="middle">第 4 年</text>
@@ -1587,7 +1412,7 @@
     </div>
     <p class="text-small" style="margin-top:6px">前 8 年爬坡贡献慢（销售低＋折现浅），中段平台期是价值主力，LOE 后的尾巴只添 0.15×。<strong>一半以上的价值要等 8 年以后才折进来</strong>——这就是为什么获批日的严格答案只有 1.75×，而不是直觉里的三五倍。</p>
 
-    <p class="text-small chart-label" style="margin-top:14px">调不同假设，答案怎么动｜峰值净利率 m × 折现率 r 的 V/P 敏感性（获批日站位）</p>
+    <p class="text-small chart-label" style="margin-top:14px">调不同假设，答案怎么动｜峰值净利率 m × 折现率 r 的 P/S 敏感性（获批日站位）</p>
     <div class="table-responsive">
       <table class="table table-sm company-table">
         <thead>
@@ -1614,7 +1439,7 @@
           <tr>
             <th>档</th>
             <th>假设变化（逐档叠加）</th>
-            <th class="text-end">V/P</th>
+            <th class="text-end">P/S</th>
             <th>性质</th>
           </tr>
         </thead>
@@ -1633,20 +1458,21 @@
       <p class="text-small" style="margin:0 0 6px"><strong>① 三个数放在同一把尺上。</strong>市场惯例 <strong>3–5×</strong>（情绪区）→ 严格 DCF 上限 <strong>≈2.2×</strong> → <strong>license-out 不到 1×</strong>（首付＋里程碑＋royalty 折现后 0.63–1.32×，中枢约 0.8×）。中国多数 biotech 走 license-out，对应的是最下面那条虚线。</p>
       <p class="text-small" style="margin:0"><strong>② 结构读数。</strong>0.34× 到 2.24× 之间升值 6.6 倍，最陡的爬升来自成功概率跳档——上市前三点按 LOA 30%→50%→90% 的示意档位折算（单资产去风险节奏，非行业平均转化率，后者见「4｜为什么难赚钱」）。最高点不在获批日而在爬坡中段：获批时峰值现金流还要被 5–8 年折现压着。</p>
     </div>
-    <p class="text-small source-note">Source：V/P ＝ 风险调整后 DCF 价值 ÷ 峰值销售；结构模型为 8 年爬坡＋4 年平台期＋专利到期后 −30%/年衰减、20 年周期，净利率 40%、r＝10%。口径说明：现金流图、敏感性表与 A–E 阶梯用参数化生成器口径（获批日 1.75×）；上方阶段曲线为手工表口径（获批点 1.82×）——差异来自 LOE 首年衰减处理（95% 过渡 vs 直接 ×0.7），属同一模型，量级不变，两口径均已留档。license-out 基准 ＝ 首付＋里程碑＋12% royalty，中方任何时点留存约为全资的 1/3；r＝8–12%、royalty 10–20% 的全网格结果 0.63–1.32× 已留档。3–5× 为市场定价锚的经验区间，非统计回归。</p>
+    <p class="text-small source-note">Source：P/S ＝ 风险调整后 DCF 价值 ÷ 峰值销售；结构模型为 8 年爬坡＋4 年平台期＋专利到期后 −30%/年衰减、20 年周期，净利率 40%、r＝10%。口径说明：现金流图、敏感性表与 A–E 阶梯用参数化生成器口径（获批日 1.75×）；上方阶段曲线为手工表口径（获批点 1.82×）——差异来自 LOE 首年衰减处理（95% 过渡 vs 直接 ×0.7），属同一模型，量级不变，两口径均已留档。license-out 基准 ＝ 首付＋里程碑＋12% royalty，中方任何时点留存约为全资的 1/3；r＝8–12%、royalty 10–20% 的全网格结果 0.63–1.32× 已留档。3–5× 为市场定价锚的经验区间，非统计回归。</p>
   </section>
 
   <div class="chapter-head">
-    <h2>3｜历史回报：板块 beta 不赚钱</h2>
+    <h2>3｜历史回报：板块 beta 不赚钱，超额只有两条路</h2>
     <div class="chapter-lede">
       <ul>
-        <li><strong>拉到 1993 年看三十三年，只领先标普 0.8 个百分点/年——接近跑平</strong>：全部超额来自 2000–2015 那一段，2015 年起已连续十一年跑输、年化差 5.1 个百分点，2021 年后扩大到约 10 个百分点/年。</li>
-        <li><strong>过去 10 年医药指数整体大幅跑输</strong>：年化约 10%，落后纳指约 12 个百分点/年、落后标普约 5 个百分点/年。十年与五年两个窗口里，跑赢标普的医药个股都恰好只有 <strong>25%</strong>——超额几乎全部是个股逻辑，产业内部离散度普遍在 28–58 个百分点；唯一「不必选股」的产业是药品分销（三家十年年化跨度仅 3.1 个百分点）。</li>
-        <li><strong>风险调整之后，唯一站得住的板块暴露是宽基医药</strong>：XLV 从 2000 年泡沫顶起算的 26 年，年化 8.7%、波动 17.9%、最大回撤 −39.2%，同期纳指 100 年化更低（7.9%）而回撤 −83%；生科细分 ETF 的收益/波动比无一只跑赢标普。<strong>医药 beta 买 XLV，生科 beta 必须自带择时。</strong></li>
-        <li><strong>超额两条路</strong>：Biotech 利率轮动（2021–26 年化 24–28%）；抓住大品种的 Pharma 左侧建仓——十倍属于左侧。</li>
+        <li><strong>拉到 1993 年看三十三年，只领先标普 0.8 个百分点/年——接近跑平</strong>：全部超额来自 2000–2015 那一段，2015 年起已连续十一年跑输、年化差 5.1 个百分点。</li>
+        <li><strong>过去 10 年医药指数整体大幅跑输</strong>：十年与五年两个窗口里，跑赢标普的医药个股都恰好只有 <strong>25%</strong>——超额几乎全部是个股逻辑；唯一「不必选股」的产业是药品分销（三家十年年化跨度仅 3.1 个百分点）。</li>
+        <li><strong>路线一｜Biotech 买板块 + 择时</strong>：BBC↔BBP 三个月动量轮动，十年回测年化 19.2%。</li>
+        <li><strong>路线二｜大药企必须选个股</strong>：抓住大品种的 Pharma 左侧建仓——十倍属于左侧。</li>
       </ul>
     </div>
   </div>
+
   <section class="card model-card">
     <span class="section-label text-small">三十年回看</span>
     <h3>把窗口拉到 1993 年：三十三年接近跑平，2015 年之后连续跑输</h3>
@@ -2070,77 +1896,467 @@
   </section>
 
   <div class="chapter-head">
-    <h2>4｜为什么难赚钱？</h2>
+    <h2>4｜往后看什么：三条技术主线与三个前瞻方向</h2>
     <div class="chapter-lede">
-      <ul>
-        <li><strong>行业回报率只有个位数</strong>：2025 年大药企后期管线研发 IRR 平均 7.0%，剔除 GLP-1 只剩 2.9%——十三年从未超过资本成本。</li>
-        <li><strong>进入临床的分子最终获批的不到 10%，研发周期 5–10 年</strong>；能赚大钱的也只有少数品种——9% 的资产贡献 70% 的峰值销售。</li>
-        <li><strong>创新器械更难</strong>：不同部位 × 不同能量形式，45 年从 0 到 1 只诞生约 10 家企业。</li>
-      </ul>
+      <p>创新药的技术演进可以收成三条主线：<strong>中心法则上下游延伸</strong>（从蛋白干预走向转录与基因层面）、<strong>患者定义精准化</strong>（基因分型带来同病异治、异病同治）、<strong>递送工程</strong>（跨膜与跨核是当前真正的瓶颈）。落到可跟踪的标的上，看癌症早筛、AI 制药、长寿科技三个前瞻方向。</p>
+      <p class="text-small" style="color:var(--muted-foreground);margin:6px 0 0">技术路线的完整排序、大额 BD／并购流向、五口径交叉验证与 MNC 交易明细，见附注「方向排序」与「验证与交易」。</p>
     </div>
   </div>
+
   <section class="card model-card">
-    <span class="section-label text-small">资本回报</span>
-    <h3>资本回报：行业研发 IRR 个位数、获批率不到 8%，高 ROIC 属于成功者</h3>
-    <p class="text-small data-note">三个数字层层递进：全行业往研发里投的钱预期赚多少（德勤 IRR，前瞻、含失败）→ 一个分子从 I 期走到获批的概率（BIO 成功率）→ 已经成功的公司账面回报有多高（ROIC，历史、只有幸存者）。三个口径量的不是同一件事，只能并列，不能相减。</p>
-
-    <p class="text-small chart-label">德勤：全球大药企后期管线研发 IRR（第 16 版，2026-05-04 发布）</p>
-    <div class="table-responsive">
-      <table class="table table-sm company-table">
-        <thead><tr><th>指标</th><th class="text-end">数值</th><th>说明</th></tr></thead>
-        <tbody>
-              <tr><td>2025 年平均静态 IRR</td><td class="text-end"><strong>7.0%</strong></td><td>13 年序列（2013→2025，%）：6.5→7.2→6.1→5.5→5.4→3.6→1.5→2.3→6.8→1.2→4.3→5.9→7.0——13 年里从未达到文献常用资本成本 10.5%</td></tr>
-              <tr><td>2025 年中位 IRR</td><td class="text-end">4.0%</td><td>均值被 GLP-1 拉高：GLP-1/GIP 资产占样本预测现金流约 38%</td></tr>
-              <tr><td>剔除 GLP-1/GIP 后平均</td><td class="text-end">2.9%</td><td>拿掉一个品类，全行业回报贴地</td></tr>
-              <tr><td>单资产研发成本</td><td class="text-end">$2,671M</td><td>discovery → launch，已含同期失败资产成本摊销（2024 年为 $2,229M）</td></tr>
-              <tr><td>单资产平均预测峰值销售</td><td class="text-end">$598M/年</td><td>剔 GLP-1 后 $353M；53% 的资产峰值预测不足 $250M</td></tr>
-              <tr><td>研发周期</td><td class="text-end">100.4 个月</td><td>Phase I → 递交，约 8.4 年</td></tr>
-        </tbody>
-      </table>
+    <span class="section-label text-small">技术主线</span>
+    <h3>创新药的三个技术方向</h3>
+    <div class="compare-col">
+      <div class="actor-row">
+        <b class="text-small">① 沿中心法则下移</b>
+        <p class="text-small">从蛋白质到基因（RNA/DNA）：层级越深越「对因」，一次干预的持续时间越长；代价是支付与递送的挑战同步放大。</p>
+      </div>
+      <div class="actor-row">
+        <b class="text-small">② 患者定义精准化</b>
+        <p class="text-small">疾病不再只按器官和组织分类，而按分子分型与基因突变定义；biomarker 先行、伴随诊断选人——同病异治、异病同治。</p>
+      </div>
+      <div class="actor-row">
+        <b class="text-small">③ 递送成为决定性瓶颈</b>
+        <p class="text-small">如何把载荷送至病灶：GalNAc 之于肝、LNP 之于 mRNA、偶联之于 ADC——每一次递送突破都打开一类新资产。</p>
+      </div>
     </div>
-    <p class="text-small source-note">附注｜Deloitte《Measuring the return from pharmaceutical innovation》第 16 版（2026-05-04 发布）。样本＝按 2020 年研发支出选出的全球前 20 大生物药企（名单不公开）的后期管线，前瞻测算、含失败成本；收入预测源 2023 年起为 Evaluate Pharma（此前 GlobalData，序列有数据商断点）；历年数字会追溯重述（±0.2–0.4pp）；未披露所用 WACC；获批资产移出管线的机制会机械压低 IRR。价值高度集中：9% 的资产（54 个重磅预测）贡献 70% 的管线价值。文献对照：单药研发成本估计区间 USD 161M–4,540M（Schlander 等 2021 汇总 45 个独立估计），各文献币种基年不同，只作区间参照、不作运算。</p>
-
-    <p class="text-small chart-label" style="margin-top:18px">BIO：临床各阶段转化成功率（%，全适应症）——进入临床的分子，最终获批的不到 8%</p>
-    <div role="img" aria-label="临床各阶段成功率：I期到II期52.0%，II期到III期28.9%，III期到递交57.8%，递交到获批90.6%，综合获批率7.9%">
-      <div class="perf-row is-drug"><span class="text-small">I 期 → II 期</span><span class="perf-track"><span class="perf-fill" style="width:52%"></span></span><span class="perf-val text-small">52.0</span></div>
-      <div class="perf-row is-drug"><span class="text-small">II 期 → III 期（最矮的门）</span><span class="perf-track"><span class="perf-fill" style="width:28.9%"></span></span><span class="perf-val text-small">28.9</span></div>
-      <div class="perf-row is-drug"><span class="text-small">III 期 → 递交</span><span class="perf-track"><span class="perf-fill" style="width:57.8%"></span></span><span class="perf-val text-small">57.8</span></div>
-      <div class="perf-row is-drug"><span class="text-small">递交 → 获批</span><span class="perf-track"><span class="perf-fill" style="width:90.6%"></span></span><span class="perf-val text-small">90.6</span></div>
-      <div class="perf-row is-all"><span class="text-small">I 期 → 获批（综合 LOA）</span><span class="perf-track"><span class="perf-fill" style="width:7.9%"></span></span><span class="perf-val text-small">7.9</span></div>
-    </div>
-    <p class="text-small">100 个进入 I 期的分子约 8 个获批（100 → 52 → 15 → 8.7 → 7.9），平均临床＋审评周期约 10.5 年。最矮的门在 II 期（28.9%）：I 期考化学与工程（能不能安全给药），II 期考生物学（靶点在人身上对不对）——这道门十年没变。适应症之间差 4 倍以上：血液 23.9%、罕见病 17.0%，肿瘤只有 5.3%。</p>
-    <p class="text-small source-note">附注｜BIO / Informa Pharma Intelligence / QLS《Clinical Development Success Rates and Contributing Factors 2011–2020》（2021-02 发布）。样本＝2011–2020 年 1,779 家企业发起项目的 12,728 次临床阶段转化（9,704 个项目），不含学术机构发起；LOA＝Phase I 至获批的综合概率。与 2006–2015 基线版的 9.6% 不可直接相比——报告自陈差异主要来自数据库审查更严格，而非真实恶化。</p>
-
-    <p class="text-small chart-label" style="margin-top:18px">公司层｜大药企最新财年 ROIC（%），柱长以最高值 39.65% 归一</p>
-    <div role="img" aria-label="药企最新财年ROIC排序：礼来39.65%，诺和诺德38.68%，罗氏27.94%，默沙东23.40%，诺华22.75%，强生21.75%，阿斯利康16.42%，第一三共15.51%，BMS 13.99%，艾伯维12.43%，赛诺菲6.11%，辉瑞5.76%，武田5.08%">
-      <div class="perf-row is-drug"><span class="text-small">Eli Lilly（LLY）</span><span class="perf-track"><span class="perf-fill" style="width:100%"></span></span><span class="perf-val text-small">39.65</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Novo Nordisk（NVO）</span><span class="perf-track"><span class="perf-fill" style="width:97.6%"></span></span><span class="perf-val text-small">38.68</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Roche（RHHBY）</span><span class="perf-track"><span class="perf-fill" style="width:70.5%"></span></span><span class="perf-val text-small">27.94</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Merck &amp; Co（MRK）</span><span class="perf-track"><span class="perf-fill" style="width:59.0%"></span></span><span class="perf-val text-small">23.40</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Novartis（NVS）</span><span class="perf-track"><span class="perf-fill" style="width:57.4%"></span></span><span class="perf-val text-small">22.75</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Johnson &amp; Johnson（JNJ）</span><span class="perf-track"><span class="perf-fill" style="width:54.9%"></span></span><span class="perf-val text-small">21.75</span></div>
-      <div class="perf-row is-drug"><span class="text-small">AstraZeneca（AZN）</span><span class="perf-track"><span class="perf-fill" style="width:41.4%"></span></span><span class="perf-val text-small">16.42</span></div>
-      <div class="perf-row is-drug"><span class="text-small">第一三共（4568.T）</span><span class="perf-track"><span class="perf-fill" style="width:39.1%"></span></span><span class="perf-val text-small">15.51</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Bristol Myers Squibb（BMY）</span><span class="perf-track"><span class="perf-fill" style="width:35.3%"></span></span><span class="perf-val text-small">13.99</span></div>
-      <div class="perf-row is-drug"><span class="text-small">AbbVie（ABBV）</span><span class="perf-track"><span class="perf-fill" style="width:31.3%"></span></span><span class="perf-val text-small">12.43</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Sanofi（SNY）</span><span class="perf-track"><span class="perf-fill" style="width:15.4%"></span></span><span class="perf-val text-small">6.11</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Pfizer（PFE）</span><span class="perf-track"><span class="perf-fill" style="width:14.5%"></span></span><span class="perf-val text-small">5.76</span></div>
-      <div class="perf-row is-drug"><span class="text-small">Takeda（TAK）</span><span class="perf-track"><span class="perf-fill" style="width:12.8%"></span></span><span class="perf-val text-small">5.08</span></div>
-    </div>
-
-    <div class="stat-strip">
-      <div><span class="text-small">药企中位｜13 家</span><strong>16.42%</strong><span class="text-small">区间 5.08–39.65</span></div>
-      <div><span class="text-small">内部极差</span><strong>7.8 倍</strong><span class="text-small">礼来 39.65 vs 武田 5.08</span></div>
-      <div><span class="text-small">出现过负 ROIC 年度</span><strong>4 / 13 家</strong><span class="text-small">MRK、PFE、BMY、AZN</span></div>
-    </div>
-    <p class="text-small">读数两点：①<strong>高 ROIC 是成功者属性、不是行业属性</strong>——同一批大药企内部极差 7.8 倍，MRK/PFE/BMY/AZN 都出现过负 ROIC 年度。②这张排序天然只包含活到今天的赢家。</p>
-
-    <div class="ratio-check">
-      <p class="text-small" style="margin:0"><strong>⛔ 口径红线：IRR 和 ROIC 不能相减。</strong>德勤 IRR 是<strong>前瞻的项目层回报</strong>——对下一批管线的期望值，失败都算在内；ROIC 是<strong>历史的公司层回报</strong>——只统计幸存者，且多数研发支出当期费用化、不进投入资本分母，分子分母双重偏向成功者。礼来 ROIC 39.65% 与行业 IRR 7.0% 同时为真、并不矛盾：前者是成功之后的账面，后者是再投一块钱的期望。跨这两个口径的任何加减或大小比较都没有含义。</p>
-    </div>
-
-    <p class="text-small source-note">Source｜ROIC：Fiscal.ai 口径，经 SEC XBRL 对 5 家复算验证、差异 &lt;1.1pp。公式 NOPAT ＝ EBIT ×（1 − 有效税率），投入资本 ＝ 权益 ＋ 有息负债 − 现金 − 短期投资，除以期初期末平均。中位数、极差与归一柱长为本项目计算。</p>
+    <p class="text-small" style="margin-top:10px">三条主线分别对应上方总框架图的生物作用层、测量与发现层、工程与递送层；展开与个股落位见下方各卡。</p>
   </section>
+
+  <section class="card priority-card">
+        <div class="priority-block" style="margin-top:20px">
+          <h4>B′｜重点标的速览：三个方向、六家公司</h4>
+          <p class="block-note text-small">癌症早筛、AI 制药、长寿科技三个前瞻方向各自最值得看的公司，按同一套结构写：<strong>基础介绍 → 盈利预测与估值 → 投资亮点</strong>。<strong>估值只留一个指标</strong>：先市值（单位统一为亿美元），再看 <strong>2026 年的 PE 或 PS</strong>（能算 PE 的用 PE，还在亏损的用 PS），不再并列 EV／EBITDA 等第二个口径。<strong>「投资亮点」三句话固定回答同一个问题——我们为什么要关注这个标的：① 它在产业里是什么地位 → ② 到目前为止最大的进展 → ③ 如果做成，大概有多少市场空间。</strong><span class="muted-line">汇率口径统一为 USD 1 = HKD 7.80 = CNY 7.20（2026-08-05）；带 ▲ 的是该方向的锚定标的。</span></p>
+
+          <div class="pick-group">
+            <h5>① 癌症早筛　<span class="tag">技术 ✓ ／ 临床 △ ／ 支付 ✓</span></h5>
+            <div class="pick-grid">
+              <div class="pick-card is-anchor">
+                <div class="pick-head"><span class="pick-name">▲ GRAIL</span><span class="pick-code">GRAL</span><span class="tag">NasdaqGS</span></div>
+                <p class="pick-val"><span>市值 USD 30 亿</span><span>2026E PS ≈ 17x</span></p>
+                <div class="pick-sec">
+                  <span class="pick-label">基础介绍</span>
+                  <p class="text-small" style="margin:0">Illumina 于 2024-06 分拆独立上市的多癌种早检（MCED）公司。核心产品 Galleri：一次抽血、按血液中的甲基化信号判断有没有癌症以及来自哪个器官。<strong>目前完全自费</strong>，定价 USD 749–949，卖给个人、部分自保雇主、医院试点与远程医疗渠道。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">盈利预测与估值</span>
+                  <p class="text-small" style="margin:0">市值约 <strong>USD 30 亿</strong>（股价 USD 68.56），对应 <strong>2026E PS ≈ 17x</strong>（一致预期 2026 年收入 USD 1.80 亿、+24%）。未来三年预计持续亏损——2026E EPS −11.02、每年经营现金流出约 USD 3 亿，账上净现金 USD 7.72 亿只够烧 2–3 年，下一份财报 2026-08-11。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">投资亮点</span>
+                  <ol class="text-small">
+                    <li><strong>产业地位：</strong>全球规模最大的<strong>多癌种</strong>血液早筛公司——单次抽血覆盖 50 余种癌症信号，而其中大多数癌种在现行体系里<strong>没有任何常规筛查手段</strong>（公司口径）；同类里没有第二家做到这个广度并已商业化。</li>
+                    <li><strong>最大进展：</strong>报销这一环已被立法解决——多癌种早检报销法案 <strong>2026-02-03 生效</strong>，FDA 一旦批准即触发 Medicare 报销（最早 2028 年见现金流）。同期最大的挫折也已发生：14.2 万人的 NHS-Galleri 随机对照试验<strong>主要终点未达</strong>。</li>
+                    <li><strong>市场空间：</strong>第三方对 2030 年 MCED <strong>已实现收入</strong>的预测只有 USD 29–46 亿，但按可筛人群算的理论上限差一个数量级——美国 50–79 岁约 1.1 亿人 × USD 749–949 ≈ <strong>USD 800–1,000 亿量级</strong>。这两个数之间的差额几乎全部由报销决定，也就是它唯一要赌的那件事。</li>
+                  </ol>
+                </div>
+                <p class="pick-caveat">口径：市值 USD 30.2 亿（盘中）与 USD 28.6 亿（另一数据商）并存，取「约 30 亿」；2026E 为卖方一致预期、非公司指引。TAM 算式 1.1 亿人 × USD 749–949 = USD 824–1,044 亿为<strong>单次上限、不含复筛，与第三方「已实现收入」预测不可混用</strong>。另有证券集体诉讼在跑（覆盖 2025-05-13～2026-02-19 买入者）。</p>
+              </div>
+              <div class="pick-card">
+                <div class="pick-head"><span class="pick-name">Guardant Health</span><span class="pick-code">GH</span><span class="tag">NasdaqGS</span></div>
+                <p class="pick-val"><span>市值 USD 190 亿</span><span>2026E PS ≈ 14x</span></p>
+                <div class="pick-sec">
+                  <span class="pick-label">基础介绍</span>
+                  <p class="text-small" style="margin:0">液体活检平台公司，三块业务：晚期肿瘤基因分型（Guardant360，现金牛）、术后微小残留病灶监测（Reveal）、结直肠癌血液筛查（<strong>Shield</strong>，2024-07 获 FDA 批准并已进 Medicare 报销）。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">盈利预测与估值</span>
+                  <p class="text-small" style="margin:0">市值约 <strong>USD 190 亿</strong>（按 2026-07-27 收盘 USD 145.47 推算），对应 <strong>2026E PS ≈ 14x</strong>（公司已上调 FY26 收入指引至 USD 13.4–13.6 亿、+36–38%，取中值）。仍未盈利但亏损在收窄——非 GAAP 单季亏损 USD 0.42/股，FY26 自由现金流出指引 USD 1.95–2.05 亿（2025 年 USD 2.33 亿）。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">投资亮点</span>
+                  <ol class="text-small">
+                    <li><strong>产业地位：</strong>早筛里<strong>唯一一个「已获 FDA 批准 ＋ 已进医保报销 ＋ 收入已在放量」</strong>的血检产品（Shield）。它证明的恰好是 GRAIL 还没证明的那一环：血检能拿到监管批准，并被支付方买单。</li>
+                    <li><strong>最大进展：</strong>2026 年二季度筛查收入 <strong>USD 5,287 万、同比 +250% 以上</strong>，检测量同比翻两番；公司据此把 FY26 筛查收入指引提到 USD 2.18–2.30 亿（27.0–28.5 万次检测），非 GAAP 毛利率 64–65%。</li>
+                    <li><strong>市场空间：</strong>只靠结直肠一个癌种，2026 年筛查收入就已指引到 USD 2.2–2.3 亿；真正的空间来自把<strong>同一条已报销的渠道从一个癌种扩到多个癌种</strong>（公司已在做 Shield 多癌种版本）——那也是它会和 GRAIL 正面相撞的地方，第三方对 2030 年该市场已实现收入的预测为 USD 29–46 亿。</li>
+                  </ol>
+                </div>
+                <p class="pick-caveat">口径：市值按 2026-07-27 收盘价推算，非实时——另一时点（2026-06-18，USD 131.78）市值为 USD 174.7 亿，故「约 190 亿」是量级值；52 周区间 USD 40.35–174.08。PS 分母用公司指引中值，不是卖方一致预期。</p>
+              </div>
+            </div>
+            <p class="text-small muted-line" style="margin:8px 0 0"><strong>本方向少了一家：Exact Sciences（EXAS）已于 2026-03-23 被雅培收购完成、股票退市</strong>，末次成交 USD 104.91（市值约 USD 200 亿、EV 约 USD 216 亿；2025 财年收入 USD 32.5 亿、+17.7%，仍亏约 USD 2.08 亿）。它不再是可投标的，但退市本身是早筛「已被大厂收编」的一个直接证据。</p>
+          </div>
+
+          <div class="pick-group">
+            <h5>② AI 制药　<span class="tag">技术 ✓ ／ 临床 △ ／ 支付 —</span><span class="text-small muted-line">拆成「卖铲子」与「自己挖矿」两种生意看</span></h5>
+            <div class="pick-grid">
+              <div class="pick-card is-anchor">
+                <div class="pick-head"><span class="pick-name">▲ 英矽智能</span><span class="pick-code">03696.HK</span><span class="tag">自己挖矿</span></div>
+                <p class="pick-val"><span>市值 USD 26 亿</span><span>PS ≈ 46x <span class="muted-line">（2025A）</span></span></p>
+                <div class="pick-sec">
+                  <span class="pick-label">基础介绍</span>
+                  <p class="text-small" style="margin:0">AI 药物发现平台＋自有管线双轮公司，2025-12-30 港交所上市（2025 年港股最大生物科技 IPO，发行价 HKD 24.05）。全球 Top 20 药企中有 13 家是其软件用户；与礼来、施维雅、齐鲁等的合作签约累计总额约 USD 46 亿（含里程碑）。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">盈利预测与估值</span>
+                  <p class="text-small" style="margin:0">市值约 <strong>USD 26 亿</strong>（HKD 200 亿量级 ÷ 7.80），对应 <strong>PS ≈ 46x</strong>——<strong>这是按 2025 年实际收入 USD 0.56 亿算的</strong>，因为 2026 年收入完全取决于里程碑与首付款到账节奏、没有可用的一致预期。账面亏损 USD 3.52 亿里约 USD 2.97 亿是优先股公允价值变动（一次性非现金），<strong>经调整亏损约 USD 4,380 万</strong>，期末现金 USD 3.93 亿。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">投资亮点</span>
+                  <ol class="text-small">
+                    <li><strong>产业地位：</strong>全球 AI 制药里<strong>唯一一家把 AI 发现的分子推到正面二期临床读出、并把结果发表在 Nature Medicine 上</strong>的公司。整个赛道「AI 到底能不能真做出药」这个问题，目前只有它给出了临床级的答案。</li>
+                    <li><strong>最大进展：</strong><strong>2026-03 把口服 GLP-1 授权给礼来</strong>——首付 USD 1.15 亿、总额至多 USD 27.5 亿。这是「AI 做出来的分子被全球最大代谢药企按大单品价码买走」的第一个实证。</li>
+                    <li><strong>市场空间：</strong>卖工具的池子本身不大——第三方对全球 AI 药物发现市场的预测是 2026 年 USD 30–50 亿、2030 年 USD 80–100 亿。真正的空间在自己挖矿：本看板「创效」页的口径是<strong>一个成功上市新药的年度峰值销售约 USD 5.98 亿</strong>，GLP-1 这类大适应症远高于此。所以它的估值不来自卖软件，而来自手里的管线有几个能走到那一步。</li>
+                  </ol>
+                </div>
+                <p class="pick-caveat">口径：市值按 HKD 38 量级股价推算，非实时（2026-02-20 高点 HKD 80.9 → 06-04 盘中 HKD 38.04，回撤近五成）。累计授权 USD 46 亿含里程碑，<strong>不是已到手现金</strong>；2025 年收入 −34.5% 的原因是里程碑付款少了（首付款 USD 5,800 万 → 1,530 万），<strong>授权总额不等于当期收入</strong>。USD 5.98 亿峰值口径不可再乘成功率、不可用于算回本倍数。</p>
+              </div>
+              <div class="pick-card">
+                <div class="pick-head"><span class="pick-name">Recursion</span><span class="pick-code">RXRX</span><span class="tag">自己挖矿</span></div>
+                <p class="pick-val"><span>市值 USD 17 亿</span><span>PS ≈ 23x <span class="muted-line">（2025A）</span></span></p>
+                <div class="pick-sec">
+                  <span class="pick-label">基础介绍</span>
+                  <p class="text-small" style="margin:0">美国规模最大的 AI biotech：自建工业化湿实验室（每周百万级细胞实验）＋自有超算 BioHive，与英伟达、拜耳、罗氏／基因泰克合作，2023 年并购 Exscientia。管线全部自研。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">盈利预测与估值</span>
+                  <p class="text-small" style="margin:0">市值约 <strong>USD 17 亿</strong>，对应 <strong>PS ≈ 23x</strong>（2025 年收入 USD 0.74 亿；2026 年无可靠一致预期，财报 2026-08-05）。年亏 USD 5.60 亿，但账上净现金 USD 5.82 亿（约 USD 1.10/股）已占市值三分之一，卖空占流通股 <strong>34.7%</strong>。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">投资亮点</span>
+                  <ol class="text-small">
+                    <li><strong>产业地位：</strong>美国「自己挖矿」这条路线上<strong>规模最大的上市公司</strong>——把湿实验室做成工业化数据工厂，是「用自有数据训练、用自有管线变现」这套模式的样板。</li>
+                    <li><strong>最大进展（是负面的，必须照实说）：</strong>到目前为止最大的变化不是临床成功，而是<strong>估值出清</strong>——多条管线被砍、TTM 收入仅 USD 0.66 亿、年亏 USD 5.60 亿、股本一年内增发 51.7%、卖空占流通股 34.7%。市场已经把它当作「AI 制药能不能自己挖矿」这个问题的<strong>反面样本</strong>。</li>
+                    <li><strong>市场空间：</strong>扣掉净现金后，市场给它<strong>全部管线的定价只剩约 USD 11 亿</strong>——只要落下一笔与英矽同量级的授权（首付 USD 1 亿量级、总额 USD 20 亿量级），量级上就足以重估这家公司。它是典型的「<strong>一个交易就能重定价</strong>」标的，不是靠收入复合增长的标的。</li>
+                  </ol>
+                </div>
+                <p class="pick-caveat">口径：市值数据商口径分散（USD 21.0 亿／19.6 亿（2026-07 @USD 3.70）／17.1 亿），取最近的「约 17 亿」为量级值；PS 用 2025 年实际收入，非 2026E。卖方均价 USD 6.64、评级「持有」。「管线定价 USD 11 亿」＝市值 17 亿 − 净现金 5.82 亿，为本项目计算、非第三方给出。</p>
+              </div>
+              <div class="pick-card">
+                <div class="pick-head"><span class="pick-name">晶泰控股</span><span class="pick-code">02228.HK</span><span class="tag">卖铲子</span></div>
+                <p class="pick-val"><span>市值 USD 50 亿 <span class="muted-line">（需刷新）</span></span><span>2026E PS ≈ 36x</span></p>
+                <div class="pick-sec">
+                  <span class="pick-label">基础介绍</span>
+                  <p class="text-small" style="margin:0">量子物理＋AI 的药物固态研发与晶型预测平台，本质是<strong>卖铲子</strong>：给药企提供计算驱动的研发服务（CRO／CRS），并向 AI for Science（材料、自动化机器人实验室）延伸。2024-06 以港交所 <strong>18C 特专科技第一股</strong>身份上市。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">盈利预测与估值</span>
+                  <p class="text-small" style="margin:0">市值约 <strong>USD 50 亿</strong>（CNY 360 亿量级 ÷ 7.20），对应 <strong>2026E PS ≈ 36x</strong>（券商 2026-03-03 预测 2026 年收入 CNY 10.1 亿）。2025 年实际收入 CNY 8.03 亿（+201.2%）、<strong>首次录得年度盈利 CNY 1.346 亿</strong>（经调整净利 CNY 2.582 亿），在手现金 CNY 70.69 亿、2026 年新发可转债再净筹 CNY 25.62 亿。</p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">投资亮点</span>
+                  <ol class="text-small">
+                    <li><strong>产业地位：</strong>这条赛道上<strong>唯一一家已经实现年度盈利</strong>的 AI 制药公司，也是港股 18C 特专科技第一股。它证明的是另一件事：「卖铲子」这门生意本身就能赚钱，不必等管线成药。</li>
+                    <li><strong>最大进展：</strong><strong>2025 年首次年度盈利</strong>（收入 CNY 8.03 亿、+201.2%，净利 CNY 1.346 亿），其中 AI for Science 分部收入从 CNY 1.63 亿增至 CNY 2.65 亿（+62.6%）——增长已经溢出医药，进到材料与新能源。</li>
+                    <li><strong>市场空间：</strong>卖铲子的天花板由整个 AI 药物发现市场决定（第三方口径 2030 年 USD 80–100 亿），加上向材料／机器人实验室扩张的 AI for Science 增量。但 <strong>36x 2026E PS 已经把这个天花板提前定价了相当一部分</strong>——它和英矽的差别是「已盈利但估值贵」对「亏损但有临床级证据」，<strong>两家不能用同一套估值</strong>。</li>
+                  </ol>
+                </div>
+                <p class="pick-caveat">口径：<strong>市值是按券商 2026-03-03 报告（股价 HKD 9.54，2025–27E 收入 CNY 7.80／10.10／13.60 亿对应 PS 46x／36x／27x）反推的隐含市值，非实时报价，需刷新</strong>——本卡六家里数据最旧的一家。2026E PS 分母为券商预测，公司未给收入指引。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pick-group">
+            <h5>③ 长寿科技　<span class="tag">技术 ✓（动物）／ 临床 ✗ ／ 支付：医保 ✗、自费 △</span></h5>
+            <div class="pick-grid">
+              <div class="pick-card is-anchor">
+                <div class="pick-head"><span class="pick-name">▲ Hims &amp; Hers</span><span class="pick-code">HIMS</span><span class="tag">NYSE</span><span class="tag">渠道／分销</span></div>
+                <p class="pick-val"><span>市值 USD 73.0 亿</span><span>2026E PE ≈ 60x</span></p>
+                <div class="pick-sec">
+                  <span class="pick-label">基础介绍</span>
+                  <p class="text-small" style="margin:0">DTC 在线医疗订阅平台：基本盘是脱发／性健康／皮肤／心理健康，2024 年加减重、2025 年加检测与激素。同时握有 503A／503B 复方产能、2025-02 收购的加州多肽产线与居家采血公司 Trybe Labs；2026-03 起平台上线诺和品牌 Wegovy／Ozempic。<strong>在本看板里的身份是渠道／分销，不是长寿药研发标的。</strong></p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">盈利预测与估值</span>
+                  <p class="text-small" style="margin:0">市值 <strong>USD 73.0 亿</strong>（2026-08-04 盘中，股价 USD 31.55），对应 <strong>2026E PE ≈ 60x</strong>（一致预期 EPS USD 0.53）。公司 FY2026 指引收入 USD 28–30 亿、adj. EBITDA USD 2.75–3.50 亿，但一致预期收入 USD 27.3 亿<strong>已低于指引下限</strong>、卖方 15 家一致「持有」且均价 USD 28.35 比现价低约 10%——<strong>中报（Q2 2026）2026-08-10 盘后发布，是这个差额的第一个裁决点。</strong></p>
+                </div>
+                <div class="pick-sec">
+                  <span class="pick-label">投资亮点</span>
+                  <ol class="text-small">
+                    <li><strong>产业地位：</strong>美国自费处方药最大的直达消费者渠道之一（TTM 收入 USD 23.7 亿、毛利率 72.9%），而且是<strong>少见的同时握有处方渠道、订阅收费与合法复方产能</strong>（503A／503B ＋ 加州多肽产线）的上市公司——长寿这个方向根本没有医保，唯一能收到的钱是消费者自己掏的，而这条链就是收这笔钱的通道。</li>
+                    <li><strong>最大进展：</strong>一场专利诉讼在一个月内变成了分销协议——<strong>2026-02-09</strong> 诺和诺德起诉它的复方司美格鲁肽（当日 −18%），<strong>2026-03-09</strong> 撤诉并把 Wegovy／Ozempic 放上它的平台（当日盘中 +36%），上线六周逾 <strong>12.5 万次发货</strong>；随后 <strong>2026-07-23</strong> BPC-157 在 FDA 药房复方顾问委员会获支持票（当日 +11%），多肽这条自费通路也开始合法化。<strong>原告变成供货方，这就是渠道价值的定价证明。</strong></li>
+                    <li><strong>市场空间：</strong>美国自费处方药盘子约 <strong>USD 1,500 亿</strong>，按拿下 5% 计＝USD 75 亿收入、20% 净利率对应约 USD 15 亿利润；公司自己的 2030 年目标是收入 ≥USD 65 亿、adj. EBITDA USD 13 亿——<strong>两个口径几乎重合</strong>，这是它天花板可信的地方。反面是同一个监管机构在六天里做了方向相反的两件事：7-23 递入合法通路、<strong>7-29 FTC 起诉它的订阅收费方式</strong>（当日 −10%）——仓位要按「政策二元事件」而不是「消费订阅股」来定。</li>
+                  </ol>
+                </div>
+                <p class="pick-caveat">口径：市值与 PE 为 2026-08-04 盘中口径，<strong>08-10 中报后须复核</strong>。2026E EPS USD 0.53 为卖方一致预期（一年内被 6 家分析师下修）、非公司指引——公司只给收入与 adj. EBITDA 指引，故这里用 PE 而不是 EV／EBITDA（按「只留一个估值指标」的规则）。USD 1,500 亿 × 5% × 20% 的天花板算式来自本项目 2026-02 自研报告的假设，<strong>是假设不是预测</strong>。「12.5 万次发货」为公司自述口径，发货次数 ≠ 订阅用户数。52 周区间 USD 13.74–65.59。</p>
+              </div>
+              <div class="pick-card is-slot" style="border-style:dashed;background:color-mix(in srgb, var(--muted) 32%, transparent)">
+                <div class="pick-head"><span class="pick-name">中国：无对应标的</span></div>
+                <p class="text-small" style="margin:0">复方药房制度不同，中国没有 503A／503B 这类「按个体处方合法复方」的通路，因此这个方向在中国<strong>没有可比的上市表达</strong>。这一格留空是结论，不是数据缺失。<br><span class="muted-line">另需注意：可投标的本身稀缺——Altos、Retro、NewLimit、Calico 全为私募；衰老细胞清除已有明确临床失败记录（Unity Biotechnology 于 2025-09 解散）；事实上最大的「长寿药」是 GLP-1。</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  </div>
+
+  <div class="ghaf-page" id="ghaf-page-2">
+  <p class="map-kicker text-small">附注·市场与支付｜正文第一章的支撑数据：中美医疗支出总量、支付方结构差异、一盒药的美元流向、美国药价政策（含涉及品种）与美股医药 Top 20 明细。数据截至 2026-08-09。</p>
+
+  <div class="background-grid" aria-label="全球医疗资产背景数据">
+    <section class="card background-card">
+      <span class="section-label text-small">背景 A</span>
+      <h3>核心市场医疗支出</h3>
+      <div class="chart-legend text-small" aria-hidden="true">
+        <span class="legend-item"><span class="legend-swatch is-government"></span>年度医疗支出（万亿美元，左轴）</span>
+        <span class="legend-item"><span class="legend-swatch is-oop"></span>占 GDP 比例（右轴）</span>
+      </div>
+      <div class="chart-wrap">
+        <svg class="spend-chart" viewBox="0 0 900 350" role="img" aria-labelledby="spend-chart-title spend-chart-desc">
+          <title id="spend-chart-title">2023 年核心市场医疗支出及其占 GDP 比例</title>
+          <desc id="spend-chart-desc">柱状图显示美国、中国、德国、日本、英国、法国的年度医疗支出，折线图显示各市场医疗支出占 GDP 比例。</desc>
+          <g aria-hidden="true">
+            <line class="chart-grid" x1="70" y1="45" x2="830" y2="45"/>
+            <line class="chart-grid" x1="70" y1="93" x2="830" y2="93"/>
+            <line class="chart-grid" x1="70" y1="141" x2="830" y2="141"/>
+            <line class="chart-grid" x1="70" y1="189" x2="830" y2="189"/>
+            <line class="chart-grid" x1="70" y1="237" x2="830" y2="237"/>
+            <line class="chart-grid" x1="70" y1="285" x2="830" y2="285"/>
+
+            <text class="chart-axis" x="58" y="49" text-anchor="end">5.0</text>
+            <text class="chart-axis" x="58" y="97" text-anchor="end">4.0</text>
+            <text class="chart-axis" x="58" y="145" text-anchor="end">3.0</text>
+            <text class="chart-axis" x="58" y="193" text-anchor="end">2.0</text>
+            <text class="chart-axis" x="58" y="241" text-anchor="end">1.0</text>
+            <text class="chart-axis" x="58" y="289" text-anchor="end">0</text>
+
+            <text class="chart-axis" x="842" y="49">20%</text>
+            <text class="chart-axis" x="842" y="97">16%</text>
+            <text class="chart-axis" x="842" y="145">12%</text>
+            <text class="chart-axis" x="842" y="193">8%</text>
+            <text class="chart-axis" x="842" y="241">4%</text>
+            <text class="chart-axis" x="842" y="289">0%</text>
+
+            <rect class="chart-bar" x="91" y="62.8" width="58" height="222.2" rx="5"/>
+            <rect class="chart-bar" x="221" y="232.7" width="58" height="52.3" rx="5"/>
+            <rect class="chart-bar" x="351" y="259.5" width="58" height="25.5" rx="5"/>
+            <rect class="chart-bar" x="481" y="263.3" width="58" height="21.7" rx="5"/>
+            <rect class="chart-bar" x="611" y="267.2" width="58" height="17.8" rx="5"/>
+            <rect class="chart-bar" x="741" y="268.1" width="58" height="16.9" rx="5"/>
+
+            <text class="chart-value" x="120" y="55" text-anchor="middle">4.63</text>
+            <text class="chart-value" x="250" y="225" text-anchor="middle">1.09</text>
+            <text class="chart-value" x="380" y="252" text-anchor="middle">0.53</text>
+            <text class="chart-value" x="510" y="256" text-anchor="middle">0.45</text>
+            <text class="chart-value" x="640" y="260" text-anchor="middle">0.37</text>
+            <text class="chart-value" x="770" y="261" text-anchor="middle">0.35</text>
+
+            <polyline class="chart-line" points="120,84.7 250,213.7 380,144.1 510,156.1 640,153.1 770,146.8"/>
+            <circle class="chart-dot" cx="120" cy="84.7" r="5"/>
+            <circle class="chart-dot" cx="250" cy="213.7" r="5"/>
+            <circle class="chart-dot" cx="380" cy="144.1" r="5"/>
+            <circle class="chart-dot" cx="510" cy="156.1" r="5"/>
+            <circle class="chart-dot" cx="640" cy="153.1" r="5"/>
+            <circle class="chart-dot" cx="770" cy="146.8" r="5"/>
+
+            <text class="chart-value" x="120" y="76" text-anchor="middle">16.69%</text>
+            <text class="chart-value" x="250" y="205" text-anchor="middle">5.94%</text>
+            <text class="chart-value" x="380" y="135" text-anchor="middle">11.74%</text>
+            <text class="chart-value" x="510" y="147" text-anchor="middle">10.74%</text>
+            <text class="chart-value" x="640" y="144" text-anchor="middle">10.99%</text>
+            <text class="chart-value" x="770" y="138" text-anchor="middle">11.52%</text>
+
+            <text class="chart-label" x="120" y="312" text-anchor="middle">美国</text>
+            <text class="chart-label" x="250" y="312" text-anchor="middle">中国</text>
+            <text class="chart-label" x="380" y="312" text-anchor="middle">德国</text>
+            <text class="chart-label" x="510" y="312" text-anchor="middle">日本</text>
+            <text class="chart-label" x="640" y="312" text-anchor="middle">英国</text>
+            <text class="chart-label" x="770" y="312" text-anchor="middle">法国</text>
+          </g>
+        </svg>
+      </div>
+      <p class="source-note text-small">Source：<a href="https://apps.who.int/nha/database" target="_blank" rel="noopener noreferrer">WHO Global Health Expenditure Database</a>，2023 年经常性医疗支出，current US$。</p>
+    </section>
+
+    <section class="card background-card">
+      <span class="section-label text-small">背景 B</span>
+      <h3>中美支付方结构</h3>
+      <div class="payer-visual" role="img" aria-label="2023年支付结构：美国政府及公共强制保险51.7%，商业保险32.4%，个人自付10.9%，其他4.9%；中国政府及社会医保57.1%，商业保险7.4%，个人自付32.2%，其他3.4%">
+        <div class="payer-row">
+          <strong>美国</strong>
+          <div class="payer-bar">
+            <span class="payer-segment-government" style="width:51.7%" title="政府及公共强制保险 51.7%">51.7%</span>
+            <span class="payer-segment-commercial" style="width:32.4%" title="商业保险 32.4%">32.4%</span>
+            <span class="payer-segment-oop" style="width:10.9%" title="个人自付 10.9%">10.9%</span>
+            <span class="payer-segment-other" style="width:4.9%" title="其他 4.9%"></span>
+          </div>
+        </div>
+        <div class="payer-row">
+          <strong>中国</strong>
+          <div class="payer-bar">
+            <span class="payer-segment-government" style="width:57.1%" title="政府及社会医保 57.1%">57.1%</span>
+            <span class="payer-segment-commercial" style="width:7.4%" title="商业保险 7.4%"></span>
+            <span class="payer-segment-oop" style="width:32.2%" title="个人自付 32.2%">32.2%</span>
+            <span class="payer-segment-other" style="width:3.4%" title="其他 3.4%"></span>
+          </div>
+        </div>
+        <div class="payer-legend text-small" aria-hidden="true">
+          <span class="legend-item"><span class="legend-swatch is-government"></span>政府及公共强制保险</span>
+          <span class="legend-item"><span class="legend-swatch is-commercial"></span>商业保险</span>
+          <span class="legend-item"><span class="legend-swatch is-oop"></span>个人自付</span>
+          <span class="legend-item"><span class="legend-swatch"></span>其他</span>
+        </div>
+      </div>
+      <p class="source-note text-small">Source：<a href="https://apps.who.int/nha/database" target="_blank" rel="noopener noreferrer">WHO Global Health Expenditure Database</a>，2023 年融资安排口径。</p>
+    </section>
+
+    <section class="card background-card">
+      <span class="section-label text-small">背景 C</span>
+      <h3>美国的药品美元流向谁</h3>
+      <p class="text-small data-note">以一支名义标价 500 美元的胰岛素为例。名义标价不是任何一方拿到的钱：真正流入产业链的现金只有 211 美元，其余 289 美元以返利和各类费用的形式回流。<strong>结构只需要记一条：这 211 美元里制造商留下约一半。</strong></p>
+
+      <div class="dollar-head">
+        <div>
+          <span class="text-small">名义标价（WAC）</span>
+          <strong>$500</strong>
+          <span class="text-small">其中 $289（57.8%）是返利与各类费用</span>
+        </div>
+        <div class="dollar-arrow" aria-hidden="true">➜</div>
+        <div>
+          <span class="text-small">实际支付现金</span>
+          <strong>$211</strong>
+          <span class="text-small">患者 $100 ＋ 雇主/健康计划 $111</span>
+        </div>
+      </div>
+
+      <p class="text-small chart-label">这 $211 由谁留存</p>
+      <div class="split-bar" role="img" aria-label="211美元现金留存分配：制造商52.1%，PBM 37.6%，药房9.1%，批发商1.2%">
+        <span class="seg-1" style="width:52.1%" title="制造商 $110，占实际现金 52.1%">制造商 52.1%</span>
+        <span class="seg-5" style="width:37.6%" title="PBM $79.3，占实际现金 37.6%">PBM 37.6%</span>
+        <span class="seg-2" style="width:9.1%" title="药房 $19.3，占实际现金 9.1%">药房 9.1%</span>
+        <span class="seg-3" style="width:1.2%" title="批发商 $2.5，占实际现金 1.2%"></span>
+      </div>
+
+      <div class="counter-note">
+        <p class="text-small"><strong>制造商保留约 50% 的实际现金</strong>（$110 / $211）——这是创新药能沉淀最大价值量的支付端基础；把名义标价当市场空间会高估 2.4 倍（500 ÷ 211）。</p>
+      </div>
+      <p class="text-small source-note">Source：用户《24Q1 医药投资策略》P8 左图，原始出处标注为公司数据、高盛全球投资研究部；留存金额由图中标注轧差计算。</p>
+    </section>
+
+    <section class="card background-card">
+      <span class="section-label text-small">背景 D</span>
+      <h3>美国药价政策：已经落地且不可逆，但名义降幅不等于收入下降</h3>
+      <p class="text-small data-note">政策已从「会不会来」变成「已经落地且没有退路」——三个循环共 40 个药定价完毕，最高法院 2026-05-18 拒审、行业宪法挑战失败，法律没有日落条款；17 家大药企在 2026-04 前全部签了 MFN 自愿协议，覆盖约 86% 的品牌市场。但落地半年后的财报证据是分化的：<strong>名义折扣 38%–84%，实际收入影响却小得多，甚至符号相反</strong>——Imbruvica 美国销售 −37.8%，而 Eliquis 反而 +22% 且公司上调全年指引。原因就在上面背景 C 这张图里：MFP 定的是净价，而净价早已被 57.8% 的返利与费用压到远低于标价，被谈掉的很大一部分本来就不在制造商口袋里。真正在扣利润的是三件「非谈判」的事：<strong>Part D 重构的厂家折扣、MFN 协议的价格让步、以及支付端的结构性收缩</strong>。CBO 已于 2026-07-29 正式承认谈判节省低于原估、而 Part D 重构成本高于原估。</p>
+
+      <div class="stat-strip">
+        <div><span class="text-small">已定价／已选定药品</span><strong>40 个</strong><span class="text-small">2026 年 10 → 2027 年 15 → 2028 年 15；2029 年起每年最多 20，2030 年累计约 60</span></div>
+        <div><span class="text-small">名义折扣区间（vs 标价）</span><strong>−38% ~ −84%</strong><span class="text-small">但生效首年只有一个品种出现清晰下滑</span></div>
+        <div><span class="text-small">2025 年全美处方药支出</span><strong>9,152 亿美元</strong><span class="text-small">同比 +12.7%，其中用量 +9.3%、价格仅 +1.2%</span></div>
+      </div>
+
+      <p class="text-small chart-label">第一块｜四条政策线各自到哪一步了</p>
+      <div class="table-responsive">
+        <table class="table table-sm company-table">
+          <thead><tr><th>政策线</th><th>状态</th><th class="text-nowrap">关键时点</th><th>对公司的实际作用</th></tr></thead>
+          <tbody>
+            <tr><td><strong>IRA Medicare 谈判</strong></td><td>已生效并按法定节奏放大</td><td>第一批 2026-01-01；第二批 2027-01-01；第三批 2028-01-01</td><td>第三批首次纳入 Part B，涉及支出 270 亿美元（约占 Medicare 药品支出 6%）。<strong>可预测、按名单来</strong>——真正的问题是规模每年扩大</td></tr>
+            <tr style="background:#FAF6F1"><td><strong>MFN 自愿协议</strong></td><td>17 家全部签署，覆盖约 86% 品牌市场</td><td>2025-09 起陆续，末家 2026-04-23；<strong>协议期仅 3 年</strong></td><td><strong>本轮最被低估的一项。</strong>不经国会、不经规则程序、条款保密。礼来 2026 年「全球价格低双位数到中双位数下降」的指引来自这里，不来自 IRA。风险在 2029-01 到期后的续约条件</td></tr>
+            <tr><td><strong>Section 232 关税</strong></td><td>已生效，但签了 MFN 的大药企税率是 0</td><td>2026-07-31（17 家）／2026-09-29（其余）</td><td>专利药默认 100%，MFN＋在美建厂 ＝ 0%（至 2029-01-20）。<strong>大药企当期风险接近归零，差异化消失</strong>；真正暴露的是仿制药与 CDMO（2028-08 起阶梯至 100%、再至 200%）</td></tr>
+            <tr style="background:#F5F1EC"><td><strong>Part D 重构</strong></td><td>已生效，最少被讨论</td><td>自付上限 2025 年起，2026 年为 2,100 美元</td><td><strong>对报表影响最直接的一项。</strong>厂家在两段均给约 20% 折扣，作用于全部适用药而非名单上的 40 个：安进 Enbrel 净价单季 −35% 并计提 Otezla 12 亿美元减值，吉利德 2025 年吸收 11 亿美元逆风</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-small chart-label" style="margin-top:16px">第二块｜生效半年的实际结果：伤害是分化的，不是统一的</p>
+      <div class="table-responsive">
+        <table class="table table-sm company-table">
+          <thead><tr><th>品种（公司）</th><th>2026 年二季度</th><th>归因</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Imbruvica</strong>（艾伯维）</td><td style="color:#8C4A57"><strong>美国 −37.8%</strong> 至 3.37 亿美元；全球 −29.4%</td><td>公司明确归因谈判定价＋竞争。<strong>唯一一个干净的受害者</strong></td></tr>
+            <tr style="background:#FAF6F1"><td><strong>Eliquis</strong>（BMS）</td><td><strong>+22%</strong> 至 44.8 亿美元，需求 +21%；全年指引由 +10–15% 上调至 +20–25%</td><td>MFP 替换掉的是原本高返利的结构，净价降幅远小于标价；辉瑞端同品种运营 +19%，归因美国<strong>净价上升</strong></td></tr>
+            <tr><td><strong>Stelara</strong>（强生）</td><td>约 760bps 拖累</td><td>主因是生物类似药（单列 460bps），政策影响被专利到期掩盖</td></tr>
+            <tr><td><strong>Enbrel</strong>（安进）</td><td>净价单季 −35%</td><td><strong>不是谈判</strong>，是 Part D 重构＋340B 结构</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="counter-note">
+        <p class="text-small" style="margin:0"><strong>这张表是整段最重要的一块：「谈判折扣 X%」不能翻译成「收入下降 X%」，甚至符号都可能相反。</strong>传导系数低的原因是结构性的——MFP 定净价，而标价里 57.8% 本来就是返利与费用。卖方对第三批的估算同向印证：Medicare 收入仅占相关公司 2027 年预测总收入的 0–3%<span style="color:#7A4E3B">（该口径来自二手引用，待核）</span>。</p>
+      </div>
+
+      <p class="text-small chart-label" style="margin-top:16px">第三块｜风险敞口排序：集中度 × Medicare 占比，缺一个乘数就没有意义</p>
+      <div class="table-responsive">
+        <table class="table table-sm company-table">
+          <thead><tr><th>公司</th><th>涉及品种（批次）</th><th class="text-end">占公司总收入</th><th>叠加的第二重风险</th></tr></thead>
+          <tbody>
+            <tr style="background:#F5E4E6"><td><strong>1 诺和诺德</strong></td><td>司美格鲁肽三个品牌（第二批，2027）</td><td class="text-end"><strong>73.9%</strong></td><td><strong>唯一一个政策足以改变公司主线的名字</strong>；2026 年指引已给出销售／利润 −5% ~ −13%。注意 Wegovy 当前只有 1.2% 的处方走 Part D，但 Medicare 肥胖覆盖 2026 年起启动</td></tr>
+            <tr style="background:#F3E9DE"><td><strong>2 BMS</strong></td><td>Eliquis（一）＋Pomalyst（二）＋Orencia（三）</td><td class="text-end"><strong>43.2%</strong></td><td><strong>唯一三批全中</strong>，且 Eliquis 美国专利 2028 到期——最纯粹的叠加案例</td></tr>
+            <tr style="background:#F3E9DE"><td><strong>3 默沙东</strong></td><td>Januvia／Janumet（一、二）＝ 仅约 2%</td><td class="text-end">2%<span class="text-small">（真实敞口 <strong>49%</strong>）</span></td><td>真正的数字是 Keytruda 317 亿美元：<strong>孤儿药豁免只把它推迟到 2029 年定价，而美国化合物专利 2028-12 到期——两件事落在同一年</strong></td></tr>
+            <tr><td><strong>4 吉利德</strong></td><td>Biktarvy（三，2028）</td><td class="text-end">48.6%</td><td>美国大市值里单品集中度最高，且 HIV 偏 Medicaid／340B，政府支付占比大概率最高</td></tr>
+            <tr><td><strong>5 诺华</strong></td><td>Cosentyx＋Kisqali（均第三批）</td><td class="text-end">21.0%</td><td>叠加 Entresto——诺华史上最大专利到期</td></tr>
+            <tr><td><strong>6 阿斯利康</strong></td><td>Farxiga（一，已生效）＋Calquence（二）</td><td class="text-end">20.3%</td><td>Farxiga 已按 −68% 重新定价，占公司 14%</td></tr>
+            <tr><td><strong>7 安进</strong></td><td>Enbrel（一）＋Otezla（二）</td><td class="text-end">12.2%</td><td>集中度最小，但<strong>唯一把政策影响做成会计数字的公司</strong>：Otezla 12 亿美元减值明确关联价格设定</td></tr>
+            <tr style="background:#F7F4EF"><td><strong>8 礼来</strong></td><td>Verzenio＋Trulicity（均第三批）</td><td class="text-end">约 15%</td><td><strong>替加泰德没有被选入第三批</strong>，谈判敞口只剩两个衰退期老品种。它真正的让步来自 MFN——指引 2026 年全球价格低双位数到中双位数下降。<strong>风险调整后是大市值里暴露最低的</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ratio-check">
+        <p class="text-small" style="margin:0 0 5px"><strong>两个必须纠正的直觉。①「被谈判的是 GLP-1」——被谈判的是诺和诺德的司美格鲁肽，礼来的替加泰德没有进任何一批名单。</strong>礼来在第三批里出现的是 Trulicity 和 Verzenio，这是这个误解的来源。</p>
+        <p class="text-small" style="margin:0 0 5px"><strong>② 集中度不等于暴露。</strong>Vertex 有 86% 的收入压在 Trikafta 上却零个品种被选中，因为 CF 人群年轻、以商保为主；再生元的 Eylea 因生物类似药进入而<strong>法定永久失去谈判资格</strong>——它的痛来自竞争，不来自政策。艾伯维也被高估：Botox 美容那一半（26 亿美元）是自费、结构性免疫。<strong>缺了 Medicare 占比这个乘数，集中度是一个无意义的数字。</strong></p>
+        <p class="text-small" style="margin:0"><strong>往后看，最该盯的时点是 2027 年而不是 2026 年：</strong>Part D 保费被行政手段压了两年（2026 年独立处方计划月均保费反而从 38.31 降到 34.50 美元），但该稳定计划在 2026 年末终止，2027 年全国平均投标价已定为 296.05 美元、约 +24%；同期计划数已从 2023 年的 804 个降到 360 个（三年 −55%，Elevance 全线退出、影响约 40 万人）。<strong>保费一次性跳涨会把药价重新推回政治议程，而 2027 恰好是第二批生效年。</strong></p>
+      </div>
+      <p class="text-small source-note">Source｜2026-08-11 网络检索汇总：CMS／HHS ASPE（谈判价与名单）、KFF（Part D 处方份额、保费与计划数）、Avalere／Milliman（批次分析）、CBO 2026-07-29 致众院委员会函与 2026-02 baseline、白宫 CEA 2026-05 报告、各公司 2025 年报与 2026 年二季报、Section 232 Proclamation 11020 相关律所 alert、AJHP 全美处方药支出。<strong>口径提醒：本段的 9,152 亿美元（含非零售渠道的处方药总支出）与上文背景 A 的「药品市场年规模 5,000 亿美元」不是同一口径，两个数不可互相替代、不可用于同一分母。</strong>敞口表的「占公司总收入」为 2025 年报告数（Trulicity、Erleada 等单品为估算，已不单列）；「Medicare 占比」一列各公司几乎均不披露，只能用处方份额与受益人数代理——这是本段最大的数据缺口，也是排序里最可能出错的一环。</p>
+      <p class="text-small source-note"><strong>待核实：</strong>司美格鲁肽存在 274 美元（CMS／IRA 谈判价）与 245 美元（白宫／MFN 协议价，另配 50 美元月自付）两个数字，属两条不同通路，引用须注明；第二批节省有「每年 120 亿美元」与「85 亿美元（2024 反事实，−36%）」两个未调和口径；第五巡回法院 No. 25-50661 是否已出判未确认；第三批中 Part B 药数量有 4 家（Avalere）与 5 家（Milliman）两种算法。本次 cms.gov 不可直抓，全部 CMS 数字经二手来源交叉确认，非原始文件。</p>
+    </section>
+  </div>
+
+  <section class="card model-card">
+    <span class="section-label text-small">板块头部</span>
+    <h3>美股医药 Top 20：市值、主业与 2026E PE</h3>
+    <p class="text-small data-note">按市值排名的美股医药前 20 名。这张表回答一个结构问题：全球最大的 20 家医药公司里，药、械、工具、保险各占多少——答案是药品占七成三，纯器械只有 4 家。</p>
+
+      <div class="table-responsive">
+        <table class="table table-sm company-table wide-table is-xl">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>公司（Ticker）</th>
+              <th>主业</th>
+              <th>业态</th>
+              <th class="text-end">市值</th>
+              <th class="text-end">TTM 收入</th>
+              <th class="text-end">TTM 净利润</th>
+              <th class="text-end">2026E PE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td class="text-nowrap">Eli Lilly（LLY）</td><td>GLP-1 减重与糖尿病、肿瘤</td><td>药品</td><td class="text-end">$999.64B</td><td class="text-end">$72.25B</td><td class="text-end">$25.28B</td><td class="text-end">32.46</td></tr>
+            <tr><td>2</td><td class="text-nowrap">Johnson &amp; Johnson（JNJ）</td><td>创新药＋医疗器械双主业</td><td>药品</td><td class="text-end">$604.16B</td><td class="text-end">$97.93B</td><td class="text-end">$21.04B</td><td class="text-end">21.59</td></tr>
+            <tr><td>3</td><td class="text-nowrap">AbbVie（ABBV）</td><td>免疫（Skyrizi/Rinvoq）、医美</td><td>药品</td><td class="text-end">$431.92B</td><td class="text-end">$64.39B</td><td class="text-end">$6.27B</td><td class="text-end">17.31</td></tr>
+            <tr><td>4</td><td class="text-nowrap">UnitedHealth（UNH）</td><td>商业保险＋Optum（含 PBM）</td><td>保险与医疗服务</td><td class="text-end">$374.56B</td><td class="text-end">$450.13B</td><td class="text-end">$14.12B</td><td class="text-end">20.83</td></tr>
+            <tr><td>5</td><td class="text-nowrap">Merck &amp; Co（MRK）</td><td>肿瘤（Keytruda）、疫苗</td><td>药品</td><td class="text-end">$312.19B</td><td class="text-end">$66.57B</td><td class="text-end">$3.17B</td><td class="text-end">46.27 ⚠</td></tr>
+            <tr><td>6</td><td class="text-nowrap">Novartis（NVS）</td><td>处方药，已剥离仿制药 Sandoz</td><td>药品</td><td class="text-end">$291.64B</td><td class="text-end">$56.69B</td><td class="text-end">$12.76B</td><td class="text-end">17.50</td></tr>
+            <tr><td>7</td><td class="text-nowrap">AstraZeneca（AZN）</td><td>肿瘤、心肾代谢、呼吸</td><td>药品</td><td class="text-end">$239.46B</td><td class="text-end">$61.37B</td><td class="text-end">$10.45B</td><td class="text-end">15.30</td></tr>
+            <tr><td>8</td><td class="text-nowrap">Thermo Fisher（TMO）</td><td>生命科学工具、CDMO（Patheon）</td><td>生命科学工具</td><td class="text-end">$211.05B</td><td class="text-end">$46.34B</td><td class="text-end">$6.97B</td><td class="text-end">22.72</td></tr>
+            <tr><td>9</td><td class="text-nowrap">Novo Nordisk（NVO）</td><td>GLP-1 减重与糖尿病</td><td>药品</td><td class="text-end">$205.77B ※</td><td class="text-end">$50.57B ※</td><td class="text-end">$18.81B ※</td><td class="text-end">14.61 ⚠</td></tr>
+            <tr><td>10</td><td class="text-nowrap">Amgen（AMGN）</td><td>生物药、罕见病</td><td>药品</td><td class="text-end">$203.26B</td><td class="text-end">$37.22B</td><td class="text-end">$7.80B</td><td class="text-end">16.85</td></tr>
+            <tr><td>11</td><td class="text-nowrap">Abbott（ABT）</td><td>诊断＋心血管＋CGM＋营养</td><td>器械与诊断</td><td class="text-end">$182.24B</td><td class="text-end">$46.59B</td><td class="text-end">$5.40B</td><td class="text-end">19.09</td></tr>
+            <tr><td>12</td><td class="text-nowrap">Gilead（GILD）</td><td>抗病毒（HIV/HBV）、肿瘤</td><td>药品</td><td class="text-end">$161.24B</td><td class="text-end">$29.74B</td><td class="text-end">$9.22B</td><td class="text-end">n/a ⚠</td></tr>
+            <tr><td>13</td><td class="text-nowrap">Pfizer（PFE）</td><td>肿瘤、疫苗、抗感染</td><td>药品</td><td class="text-end">$141.66B</td><td class="text-end">$63.70B</td><td class="text-end">$4.33B</td><td class="text-end">8.43</td></tr>
+            <tr><td>14</td><td class="text-nowrap">Danaher（DHR）</td><td>生命科学工具、体外诊断</td><td>生命科学工具</td><td class="text-end">$138.43B</td><td class="text-end">$25.11B</td><td class="text-end">$4.00B</td><td class="text-end">23.14</td></tr>
+            <tr><td>15</td><td class="text-nowrap">CVS Health（CVS）</td><td>药房＋PBM（Caremark）＋Aetna 保险</td><td>保险与医疗服务</td><td class="text-end">$132.36B</td><td class="text-end">$405.62B</td><td class="text-end">$2.93B</td><td class="text-end">13.92</td></tr>
+            <tr><td>16</td><td class="text-nowrap">Intuitive Surgical（ISRG）</td><td>手术机器人（达芬奇）</td><td>器械与诊断</td><td class="text-end">$131.58B</td><td class="text-end">$11.03B</td><td class="text-end">$3.14B</td><td class="text-end">34.49</td></tr>
+            <tr><td>17</td><td class="text-nowrap">Bristol Myers Squibb（BMY）</td><td>肿瘤、免疫、CAR-T</td><td>药品</td><td class="text-end">$130.83B</td><td class="text-end">$49.19B</td><td class="text-end">$9.28B</td><td class="text-end">9.39</td></tr>
+            <tr><td>18</td><td class="text-nowrap">Stryker（SYK）</td><td>骨科植入、手术设备</td><td>器械与诊断</td><td class="text-end">$128.47B</td><td class="text-end">$25.84B</td><td class="text-end">$3.73B</td><td class="text-end">22.31</td></tr>
+            <tr><td>19</td><td class="text-nowrap">Vertex（VRTX）</td><td>CF、非阿片镇痛</td><td>药品</td><td class="text-end">$121.27B</td><td class="text-end">$12.59B</td><td class="text-end">$4.41B</td><td class="text-end">25.31</td></tr>
+            <tr><td>20</td><td class="text-nowrap">Medtronic（MDT）</td><td>植入、神经调控、糖尿病</td><td>器械与诊断</td><td class="text-end">$109.12B</td><td class="text-end">$36.36B</td><td class="text-end">$4.80B</td><td class="text-end">14.32 ⚠</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    <p class="text-small chart-label">Top 20 市值按业态拆分（合计 USD 5,250.85B）</p>
+    <div class="split-bar" role="img" aria-label="Top20市值业态拆分：药品73.2%，器械与诊断10.5%，保险与医疗服务9.7%，生命科学工具6.7%">
+      <span class="seg-1" style="width:73.2%" title="药品 12 家，USD 3,843.04B，73.2%">药品 12 家｜73.2%</span>
+      <span class="seg-2" style="width:10.5%" title="器械与诊断 4 家，USD 551.41B，10.5%">器械 10.5%</span>
+      <span class="seg-5" style="width:9.7%" title="保险与医疗服务 2 家，USD 506.92B，9.7%">保险 9.7%</span>
+      <span class="seg-3" style="width:6.7%" title="生命科学工具 2 家，USD 349.48B，6.7%">工具</span>
+    </div>
+    <div class="stat-strip">
+      <div><span class="text-small">药品｜12 家</span><strong>$3,843.04B</strong><span class="text-small">73.2%</span></div>
+      <div><span class="text-small">器械与诊断｜4 家</span><strong>$551.41B</strong><span class="text-small">10.5%（ABT / ISRG / SYK / MDT）</span></div>
+      <div><span class="text-small">保险与医疗服务｜2 家</span><strong>$506.92B</strong><span class="text-small">9.7%（UNH / CVS）</span></div>
+      <div><span class="text-small">生命科学工具｜2 家</span><strong>$349.48B</strong><span class="text-small">6.7%（TMO / DHR）</span></div>
+    </div>
+
+    <p class="text-small"><strong>与 2024 年那版 TOP30 对照，唯一一致的结论：药品的市值与收入都在数量级上压过器械</strong>，且 2026 年样本收窄后这个压制更明显。</p>
+
+    <p class="text-small source-note">Source：快照 2026-08-04 美东 09:37–09:39，<strong>盘中价非收盘价</strong>。业态归类、市值分组求和与占比均为本项目计算。<strong>与本看板「02 创新器械」表的 2026-08-03 收盘快照不同源，两处数字不应混用。</strong></p>
+    <p class="text-small source-note">⚠ 逐项提示：<strong>MRK</strong> 2026E PE 46.27 含约 USD 11.6B 一次性费用，与同业不可比；<strong>GILD</strong> FY2026 一致预期净利润为 −USD 3.39B，PE 无意义故记 n/a；<strong>MDT</strong> 财年 4 月结束，不存在严格的「2026E」，14.32 实际对应 FY2027E；<strong>NVO</strong>（※）收入与利润按隐含汇率 1 USD ≈ 6.482 DKK 折算、基准日未披露，且市值两来源相差 29%（205.77 与另一来源 159.47），若按后者 NVO 应排第 12 位；<strong>ABBV</strong>（10 家）与 <strong>VRTX</strong>（11 家）的分析师覆盖数偏低，一致预期稳定性弱于其他标的。</p>
+  </section>
+  </div>
+
+  <div class="ghaf-page" id="ghaf-page-3">
+  <p class="map-kicker text-small">附注·创新器械｜美股医药第二大板块，总市值约 1 万亿美元；45 年从 0 到 1 只诞生约 10 家企业。数据截至 2026-08-09。</p>
 
   <section class="card model-card">
     <span class="section-label text-small">器械从 0 到 1</span>
@@ -2247,13 +2463,11 @@
       <p class="thesis"><strong>投研判断：</strong>这是最容易出现“强者恒强”的板块；重点看耗材复购、装机网络、并购整合和医生转换成本。</p>
     </section>
   </div>
-
-  <div class="chapter-head">
-    <h2>5｜往后看什么：早筛、AI 制药、长寿</h2>
-    <div class="chapter-lede">
-      <p>共识区（ADC/GLP-1/RNA）增长确定但定价也充分；<strong>早筛、AI 制药、长寿在前瞻区</strong>——产业处于起步阶段、变化快。先看创新药的技术主线与大药企真金白银的下注方向，再看三个前瞻方向。</p>
-    </div>
   </div>
+
+  <div class="ghaf-page" id="ghaf-page-4">
+  <p class="map-kicker text-small">附注·方向排序｜创新药技术路线的总框架、大额 BD／并购的资金流向，以及按「未被定价」排序的完整名单。数据截止 2026-08-04；排序属本项目研判，不构成投资建议。</p>
+
   <div class="sector-grid">
     <section class="sector is-innovation" data-series="1">
       <div class="sector-head">
@@ -2435,26 +2649,6 @@
       </div>
     </section>
   </div>
-
-  <section class="card model-card">
-    <span class="section-label text-small">技术主线</span>
-    <h3>创新药的三个技术方向</h3>
-    <div class="compare-col">
-      <div class="actor-row">
-        <b class="text-small">① 沿中心法则下移</b>
-        <p class="text-small">从蛋白质到基因（RNA/DNA）：层级越深越「对因」，一次干预的持续时间越长；代价是支付与递送的挑战同步放大。</p>
-      </div>
-      <div class="actor-row">
-        <b class="text-small">② 患者定义精准化</b>
-        <p class="text-small">疾病不再只按器官和组织分类，而按分子分型与基因突变定义；biomarker 先行、伴随诊断选人——同病异治、异病同治。</p>
-      </div>
-      <div class="actor-row">
-        <b class="text-small">③ 递送成为决定性瓶颈</b>
-        <p class="text-small">如何把载荷送至病灶：GalNAc 之于肝、LNP 之于 mRNA、偶联之于 ADC——每一次递送突破都打开一类新资产。</p>
-      </div>
-    </div>
-    <p class="text-small" style="margin-top:10px">三条主线分别对应上方总框架图的生物作用层、测量与发现层、工程与递送层；展开与个股落位见下方各卡。</p>
-  </section>
 
   <section class="card model-card">
     <span class="section-label text-small">大药企的真金白银</span>
@@ -2658,159 +2852,6 @@
       </div>
 
 
-      <div class="priority-block" style="margin-top:20px">
-        <h4>B′｜重点标的速览：三个方向、六家公司</h4>
-        <p class="block-note text-small">上面三个方向（癌症早筛、AI 制药、长寿科技）各自最值得看的公司，按同一套结构写：<strong>基础介绍 → 盈利预测与估值 → 投资亮点</strong>。<strong>估值只留一个指标</strong>：先市值（单位统一为亿美元），再看 <strong>2026 年的 PE 或 PS</strong>（能算 PE 的用 PE，还在亏损的用 PS），不再并列 EV／EBITDA 等第二个口径。<strong>「投资亮点」三句话固定回答同一个问题——我们为什么要关注这个标的：① 它在产业里是什么地位 → ② 到目前为止最大的进展 → ③ 如果做成，大概有多少市场空间。</strong><span class="muted-line">汇率口径统一为 USD 1 = HKD 7.80 = CNY 7.20（2026-08-05）；带 ▲ 的是该方向的锚定标的。</span></p>
-
-        <div class="pick-group">
-          <h5>① 癌症早筛　<span class="tag">技术 ✓ ／ 临床 △ ／ 支付 ✓</span></h5>
-          <div class="pick-grid">
-            <div class="pick-card is-anchor">
-              <div class="pick-head"><span class="pick-name">▲ GRAIL</span><span class="pick-code">GRAL</span><span class="tag">NasdaqGS</span></div>
-              <p class="pick-val"><span>市值 USD 30 亿</span><span>2026E PS ≈ 17x</span></p>
-              <div class="pick-sec">
-                <span class="pick-label">基础介绍</span>
-                <p class="text-small" style="margin:0">Illumina 于 2024-06 分拆独立上市的多癌种早检（MCED）公司。核心产品 Galleri：一次抽血、按血液中的甲基化信号判断有没有癌症以及来自哪个器官。<strong>目前完全自费</strong>，定价 USD 749–949，卖给个人、部分自保雇主、医院试点与远程医疗渠道。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">盈利预测与估值</span>
-                <p class="text-small" style="margin:0">市值约 <strong>USD 30 亿</strong>（股价 USD 68.56），对应 <strong>2026E PS ≈ 17x</strong>（一致预期 2026 年收入 USD 1.80 亿、+24%）。未来三年预计持续亏损——2026E EPS −11.02、每年经营现金流出约 USD 3 亿，账上净现金 USD 7.72 亿只够烧 2–3 年，下一份财报 2026-08-11。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">投资亮点</span>
-                <ol class="text-small">
-                  <li><strong>产业地位：</strong>全球规模最大的<strong>多癌种</strong>血液早筛公司——单次抽血覆盖 50 余种癌症信号，而其中大多数癌种在现行体系里<strong>没有任何常规筛查手段</strong>（公司口径）；同类里没有第二家做到这个广度并已商业化。</li>
-                  <li><strong>最大进展：</strong>报销这一环已被立法解决——多癌种早检报销法案 <strong>2026-02-03 生效</strong>，FDA 一旦批准即触发 Medicare 报销（最早 2028 年见现金流）。同期最大的挫折也已发生：14.2 万人的 NHS-Galleri 随机对照试验<strong>主要终点未达</strong>。</li>
-                  <li><strong>市场空间：</strong>第三方对 2030 年 MCED <strong>已实现收入</strong>的预测只有 USD 29–46 亿，但按可筛人群算的理论上限差一个数量级——美国 50–79 岁约 1.1 亿人 × USD 749–949 ≈ <strong>USD 800–1,000 亿量级</strong>。这两个数之间的差额几乎全部由报销决定，也就是它唯一要赌的那件事。</li>
-                </ol>
-              </div>
-              <p class="pick-caveat">口径：市值 USD 30.2 亿（盘中）与 USD 28.6 亿（另一数据商）并存，取「约 30 亿」；2026E 为卖方一致预期、非公司指引。TAM 算式 1.1 亿人 × USD 749–949 = USD 824–1,044 亿为<strong>单次上限、不含复筛，与第三方「已实现收入」预测不可混用</strong>。另有证券集体诉讼在跑（覆盖 2025-05-13～2026-02-19 买入者）。</p>
-            </div>
-            <div class="pick-card">
-              <div class="pick-head"><span class="pick-name">Guardant Health</span><span class="pick-code">GH</span><span class="tag">NasdaqGS</span></div>
-              <p class="pick-val"><span>市值 USD 190 亿</span><span>2026E PS ≈ 14x</span></p>
-              <div class="pick-sec">
-                <span class="pick-label">基础介绍</span>
-                <p class="text-small" style="margin:0">液体活检平台公司，三块业务：晚期肿瘤基因分型（Guardant360，现金牛）、术后微小残留病灶监测（Reveal）、结直肠癌血液筛查（<strong>Shield</strong>，2024-07 获 FDA 批准并已进 Medicare 报销）。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">盈利预测与估值</span>
-                <p class="text-small" style="margin:0">市值约 <strong>USD 190 亿</strong>（按 2026-07-27 收盘 USD 145.47 推算），对应 <strong>2026E PS ≈ 14x</strong>（公司已上调 FY26 收入指引至 USD 13.4–13.6 亿、+36–38%，取中值）。仍未盈利但亏损在收窄——非 GAAP 单季亏损 USD 0.42/股，FY26 自由现金流出指引 USD 1.95–2.05 亿（2025 年 USD 2.33 亿）。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">投资亮点</span>
-                <ol class="text-small">
-                  <li><strong>产业地位：</strong>早筛里<strong>唯一一个「已获 FDA 批准 ＋ 已进医保报销 ＋ 收入已在放量」</strong>的血检产品（Shield）。它证明的恰好是 GRAIL 还没证明的那一环：血检能拿到监管批准，并被支付方买单。</li>
-                  <li><strong>最大进展：</strong>2026 年二季度筛查收入 <strong>USD 5,287 万、同比 +250% 以上</strong>，检测量同比翻两番；公司据此把 FY26 筛查收入指引提到 USD 2.18–2.30 亿（27.0–28.5 万次检测），非 GAAP 毛利率 64–65%。</li>
-                  <li><strong>市场空间：</strong>只靠结直肠一个癌种，2026 年筛查收入就已指引到 USD 2.2–2.3 亿；真正的空间来自把<strong>同一条已报销的渠道从一个癌种扩到多个癌种</strong>（公司已在做 Shield 多癌种版本）——那也是它会和 GRAIL 正面相撞的地方，第三方对 2030 年该市场已实现收入的预测为 USD 29–46 亿。</li>
-                </ol>
-              </div>
-              <p class="pick-caveat">口径：市值按 2026-07-27 收盘价推算，非实时——另一时点（2026-06-18，USD 131.78）市值为 USD 174.7 亿，故「约 190 亿」是量级值；52 周区间 USD 40.35–174.08。PS 分母用公司指引中值，不是卖方一致预期。</p>
-            </div>
-          </div>
-          <p class="text-small muted-line" style="margin:8px 0 0"><strong>本方向少了一家：Exact Sciences（EXAS）已于 2026-03-23 被雅培收购完成、股票退市</strong>，末次成交 USD 104.91（市值约 USD 200 亿、EV 约 USD 216 亿；2025 财年收入 USD 32.5 亿、+17.7%，仍亏约 USD 2.08 亿）。它不再是可投标的，但退市本身是早筛「已被大厂收编」的一个直接证据。</p>
-        </div>
-
-        <div class="pick-group">
-          <h5>② AI 制药　<span class="tag">技术 ✓ ／ 临床 △ ／ 支付 —</span><span class="text-small muted-line">拆成「卖铲子」与「自己挖矿」两种生意看</span></h5>
-          <div class="pick-grid">
-            <div class="pick-card is-anchor">
-              <div class="pick-head"><span class="pick-name">▲ 英矽智能</span><span class="pick-code">03696.HK</span><span class="tag">自己挖矿</span></div>
-              <p class="pick-val"><span>市值 USD 26 亿</span><span>PS ≈ 46x <span class="muted-line">（2025A）</span></span></p>
-              <div class="pick-sec">
-                <span class="pick-label">基础介绍</span>
-                <p class="text-small" style="margin:0">AI 药物发现平台＋自有管线双轮公司，2025-12-30 港交所上市（2025 年港股最大生物科技 IPO，发行价 HKD 24.05）。全球 Top 20 药企中有 13 家是其软件用户；与礼来、施维雅、齐鲁等的合作签约累计总额约 USD 46 亿（含里程碑）。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">盈利预测与估值</span>
-                <p class="text-small" style="margin:0">市值约 <strong>USD 26 亿</strong>（HKD 200 亿量级 ÷ 7.80），对应 <strong>PS ≈ 46x</strong>——<strong>这是按 2025 年实际收入 USD 0.56 亿算的</strong>，因为 2026 年收入完全取决于里程碑与首付款到账节奏、没有可用的一致预期。账面亏损 USD 3.52 亿里约 USD 2.97 亿是优先股公允价值变动（一次性非现金），<strong>经调整亏损约 USD 4,380 万</strong>，期末现金 USD 3.93 亿。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">投资亮点</span>
-                <ol class="text-small">
-                  <li><strong>产业地位：</strong>全球 AI 制药里<strong>唯一一家把 AI 发现的分子推到正面二期临床读出、并把结果发表在 Nature Medicine 上</strong>的公司。整个赛道「AI 到底能不能真做出药」这个问题，目前只有它给出了临床级的答案。</li>
-                  <li><strong>最大进展：</strong><strong>2026-03 把口服 GLP-1 授权给礼来</strong>——首付 USD 1.15 亿、总额至多 USD 27.5 亿。这是「AI 做出来的分子被全球最大代谢药企按大单品价码买走」的第一个实证。</li>
-                  <li><strong>市场空间：</strong>卖工具的池子本身不大——第三方对全球 AI 药物发现市场的预测是 2026 年 USD 30–50 亿、2030 年 USD 80–100 亿。真正的空间在自己挖矿：本看板「创效」页的口径是<strong>一个成功上市新药的年度峰值销售约 USD 5.98 亿</strong>，GLP-1 这类大适应症远高于此。所以它的估值不来自卖软件，而来自手里的管线有几个能走到那一步。</li>
-                </ol>
-              </div>
-              <p class="pick-caveat">口径：市值按 HKD 38 量级股价推算，非实时（2026-02-20 高点 HKD 80.9 → 06-04 盘中 HKD 38.04，回撤近五成）。累计授权 USD 46 亿含里程碑，<strong>不是已到手现金</strong>；2025 年收入 −34.5% 的原因是里程碑付款少了（首付款 USD 5,800 万 → 1,530 万），<strong>授权总额不等于当期收入</strong>。USD 5.98 亿峰值口径不可再乘成功率、不可用于算回本倍数。</p>
-            </div>
-            <div class="pick-card">
-              <div class="pick-head"><span class="pick-name">Recursion</span><span class="pick-code">RXRX</span><span class="tag">自己挖矿</span></div>
-              <p class="pick-val"><span>市值 USD 17 亿</span><span>PS ≈ 23x <span class="muted-line">（2025A）</span></span></p>
-              <div class="pick-sec">
-                <span class="pick-label">基础介绍</span>
-                <p class="text-small" style="margin:0">美国规模最大的 AI biotech：自建工业化湿实验室（每周百万级细胞实验）＋自有超算 BioHive，与英伟达、拜耳、罗氏／基因泰克合作，2023 年并购 Exscientia。管线全部自研。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">盈利预测与估值</span>
-                <p class="text-small" style="margin:0">市值约 <strong>USD 17 亿</strong>，对应 <strong>PS ≈ 23x</strong>（2025 年收入 USD 0.74 亿；2026 年无可靠一致预期，财报 2026-08-05）。年亏 USD 5.60 亿，但账上净现金 USD 5.82 亿（约 USD 1.10/股）已占市值三分之一，卖空占流通股 <strong>34.7%</strong>。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">投资亮点</span>
-                <ol class="text-small">
-                  <li><strong>产业地位：</strong>美国「自己挖矿」这条路线上<strong>规模最大的上市公司</strong>——把湿实验室做成工业化数据工厂，是「用自有数据训练、用自有管线变现」这套模式的样板。</li>
-                  <li><strong>最大进展（是负面的，必须照实说）：</strong>到目前为止最大的变化不是临床成功，而是<strong>估值出清</strong>——多条管线被砍、TTM 收入仅 USD 0.66 亿、年亏 USD 5.60 亿、股本一年内增发 51.7%、卖空占流通股 34.7%。市场已经把它当作「AI 制药能不能自己挖矿」这个问题的<strong>反面样本</strong>。</li>
-                  <li><strong>市场空间：</strong>扣掉净现金后，市场给它<strong>全部管线的定价只剩约 USD 11 亿</strong>——只要落下一笔与英矽同量级的授权（首付 USD 1 亿量级、总额 USD 20 亿量级），量级上就足以重估这家公司。它是典型的「<strong>一个交易就能重定价</strong>」标的，不是靠收入复合增长的标的。</li>
-                </ol>
-              </div>
-              <p class="pick-caveat">口径：市值数据商口径分散（USD 21.0 亿／19.6 亿（2026-07 @USD 3.70）／17.1 亿），取最近的「约 17 亿」为量级值；PS 用 2025 年实际收入，非 2026E。卖方均价 USD 6.64、评级「持有」。「管线定价 USD 11 亿」＝市值 17 亿 − 净现金 5.82 亿，为本项目计算、非第三方给出。</p>
-            </div>
-            <div class="pick-card">
-              <div class="pick-head"><span class="pick-name">晶泰控股</span><span class="pick-code">02228.HK</span><span class="tag">卖铲子</span></div>
-              <p class="pick-val"><span>市值 USD 50 亿 <span class="muted-line">（需刷新）</span></span><span>2026E PS ≈ 36x</span></p>
-              <div class="pick-sec">
-                <span class="pick-label">基础介绍</span>
-                <p class="text-small" style="margin:0">量子物理＋AI 的药物固态研发与晶型预测平台，本质是<strong>卖铲子</strong>：给药企提供计算驱动的研发服务（CRO／CRS），并向 AI for Science（材料、自动化机器人实验室）延伸。2024-06 以港交所 <strong>18C 特专科技第一股</strong>身份上市。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">盈利预测与估值</span>
-                <p class="text-small" style="margin:0">市值约 <strong>USD 50 亿</strong>（CNY 360 亿量级 ÷ 7.20），对应 <strong>2026E PS ≈ 36x</strong>（券商 2026-03-03 预测 2026 年收入 CNY 10.1 亿）。2025 年实际收入 CNY 8.03 亿（+201.2%）、<strong>首次录得年度盈利 CNY 1.346 亿</strong>（经调整净利 CNY 2.582 亿），在手现金 CNY 70.69 亿、2026 年新发可转债再净筹 CNY 25.62 亿。</p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">投资亮点</span>
-                <ol class="text-small">
-                  <li><strong>产业地位：</strong>这条赛道上<strong>唯一一家已经实现年度盈利</strong>的 AI 制药公司，也是港股 18C 特专科技第一股。它证明的是另一件事：「卖铲子」这门生意本身就能赚钱，不必等管线成药。</li>
-                  <li><strong>最大进展：</strong><strong>2025 年首次年度盈利</strong>（收入 CNY 8.03 亿、+201.2%，净利 CNY 1.346 亿），其中 AI for Science 分部收入从 CNY 1.63 亿增至 CNY 2.65 亿（+62.6%）——增长已经溢出医药，进到材料与新能源。</li>
-                  <li><strong>市场空间：</strong>卖铲子的天花板由整个 AI 药物发现市场决定（第三方口径 2030 年 USD 80–100 亿），加上向材料／机器人实验室扩张的 AI for Science 增量。但 <strong>36x 2026E PS 已经把这个天花板提前定价了相当一部分</strong>——它和英矽的差别是「已盈利但估值贵」对「亏损但有临床级证据」，<strong>两家不能用同一套估值</strong>。</li>
-                </ol>
-              </div>
-              <p class="pick-caveat">口径：<strong>市值是按券商 2026-03-03 报告（股价 HKD 9.54，2025–27E 收入 CNY 7.80／10.10／13.60 亿对应 PS 46x／36x／27x）反推的隐含市值，非实时报价，需刷新</strong>——本卡六家里数据最旧的一家。2026E PS 分母为券商预测，公司未给收入指引。</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pick-group">
-          <h5>③ 长寿科技　<span class="tag">技术 ✓（动物）／ 临床 ✗ ／ 支付：医保 ✗、自费 △</span></h5>
-          <div class="pick-grid">
-            <div class="pick-card is-anchor">
-              <div class="pick-head"><span class="pick-name">▲ Hims &amp; Hers</span><span class="pick-code">HIMS</span><span class="tag">NYSE</span><span class="tag">渠道／分销</span></div>
-              <p class="pick-val"><span>市值 USD 73.0 亿</span><span>2026E PE ≈ 60x</span></p>
-              <div class="pick-sec">
-                <span class="pick-label">基础介绍</span>
-                <p class="text-small" style="margin:0">DTC 在线医疗订阅平台：基本盘是脱发／性健康／皮肤／心理健康，2024 年加减重、2025 年加检测与激素。同时握有 503A／503B 复方产能、2025-02 收购的加州多肽产线与居家采血公司 Trybe Labs；2026-03 起平台上线诺和品牌 Wegovy／Ozempic。<strong>在本看板里的身份是渠道／分销，不是长寿药研发标的。</strong></p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">盈利预测与估值</span>
-                <p class="text-small" style="margin:0">市值 <strong>USD 73.0 亿</strong>（2026-08-04 盘中，股价 USD 31.55），对应 <strong>2026E PE ≈ 60x</strong>（一致预期 EPS USD 0.53）。公司 FY2026 指引收入 USD 28–30 亿、adj. EBITDA USD 2.75–3.50 亿，但一致预期收入 USD 27.3 亿<strong>已低于指引下限</strong>、卖方 15 家一致「持有」且均价 USD 28.35 比现价低约 10%——<strong>中报（Q2 2026）2026-08-10 盘后发布，是这个差额的第一个裁决点。</strong></p>
-              </div>
-              <div class="pick-sec">
-                <span class="pick-label">投资亮点</span>
-                <ol class="text-small">
-                  <li><strong>产业地位：</strong>美国自费处方药最大的直达消费者渠道之一（TTM 收入 USD 23.7 亿、毛利率 72.9%），而且是<strong>少见的同时握有处方渠道、订阅收费与合法复方产能</strong>（503A／503B ＋ 加州多肽产线）的上市公司——长寿这个方向根本没有医保，唯一能收到的钱是消费者自己掏的，而这条链就是收这笔钱的通道。</li>
-                  <li><strong>最大进展：</strong>一场专利诉讼在一个月内变成了分销协议——<strong>2026-02-09</strong> 诺和诺德起诉它的复方司美格鲁肽（当日 −18%），<strong>2026-03-09</strong> 撤诉并把 Wegovy／Ozempic 放上它的平台（当日盘中 +36%），上线六周逾 <strong>12.5 万次发货</strong>；随后 <strong>2026-07-23</strong> BPC-157 在 FDA 药房复方顾问委员会获支持票（当日 +11%），多肽这条自费通路也开始合法化。<strong>原告变成供货方，这就是渠道价值的定价证明。</strong></li>
-                  <li><strong>市场空间：</strong>美国自费处方药盘子约 <strong>USD 1,500 亿</strong>，按拿下 5% 计＝USD 75 亿收入、20% 净利率对应约 USD 15 亿利润；公司自己的 2030 年目标是收入 ≥USD 65 亿、adj. EBITDA USD 13 亿——<strong>两个口径几乎重合</strong>，这是它天花板可信的地方。反面是同一个监管机构在六天里做了方向相反的两件事：7-23 递入合法通路、<strong>7-29 FTC 起诉它的订阅收费方式</strong>（当日 −10%）——仓位要按「政策二元事件」而不是「消费订阅股」来定。</li>
-                </ol>
-              </div>
-              <p class="pick-caveat">口径：市值与 PE 为 2026-08-04 盘中口径，<strong>08-10 中报后须复核</strong>。2026E EPS USD 0.53 为卖方一致预期（一年内被 6 家分析师下修）、非公司指引——公司只给收入与 adj. EBITDA 指引，故这里用 PE 而不是 EV／EBITDA（按「只留一个估值指标」的规则）。USD 1,500 亿 × 5% × 20% 的天花板算式来自本项目 2026-02 自研报告的假设，<strong>是假设不是预测</strong>。「12.5 万次发货」为公司自述口径，发货次数 ≠ 订阅用户数。52 周区间 USD 13.74–65.59。</p>
-            </div>
-            <div class="pick-card is-slot" style="border-style:dashed;background:color-mix(in srgb, var(--muted) 32%, transparent)">
-              <div class="pick-head"><span class="pick-name">中国：无对应标的</span></div>
-              <p class="text-small" style="margin:0">复方药房制度不同，中国没有 503A／503B 这类「按个体处方合法复方」的通路，因此这个方向在中国<strong>没有可比的上市表达</strong>。这一格留空是结论，不是数据缺失。<br><span class="muted-line">另需注意：可投标的本身稀缺——Altos、Retro、NewLimit、Calico 全为私募；衰老细胞清除已有明确临床失败记录（Unity Biotechnology 于 2025-09 解散）；事实上最大的「长寿药」是 GLP-1。</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="priority-block">
@@ -3013,11 +3054,6 @@
     <p class="text-small source-note">Source｜出海交易：USD 137.7B（2025 全年）与约 USD 60B（2026 Q1）为 <strong>PharmCube 数据</strong>，经 <a href="https://pharmasource.global/content/china-biopharma-out-licensing-surges-to-record-137-7b-in-2025-2026-on-pace-to-break-it-again/" target="_blank" rel="noopener noreferrer">PharmaSource Global</a> 报道，<strong>单一数据商、方法未公开、本项目未交叉核验</strong>。舶望制药／Argo Biopharma 两笔为公司官方 PR（2024-01：总值约 USD 4.2B、首付 USD 185M；2025-09-03：总值 USD 5.2B、首付 USD 160M），<strong>3.7% 与 96.3% 为本项目按 345 ÷ 9,400 计算</strong>。SSGJ-707 条款为上市公司披露（<a href="https://www.pfizer.com/news/press-release/press-release-detail/pfizer-completes-licensing-agreement-3sbio" target="_blank" rel="noopener noreferrer">Pfizer 新闻稿</a>、PharmExec）。瑞博／BI USD 2.0B、圣因生物／Genentech USD 1.7B 及「首付合计约 USD 5 亿」为各公司 PR 与行业汇总口径，<strong>单笔首付未分别披露，故表中合并列示、不做拆分推算</strong>。散点图的<strong>纵轴位置为本项目判断</strong>（与上一节 A 组排序同源，失效条件见裁决表），<strong>横轴分档按可查到的真实收入落位</strong>；PD-1/VEGF 双抗的中国销售金额本项目未取到，其横轴位置按「已有商业化销售、量级为亿美元级」落档，<strong>属推断落位，待补确切数字</strong>。全部逐条来源已在各方向的来源登记表中留档。</p>
   </section>
 
-  </div>
-
-  <div class="ghaf-page" id="ghaf-page-2">
-  <p class="map-kicker text-small">附页｜来自「中美医药投研框架」看板；数据截止 2026-08-04；排序属本项目研判，不构成投资建议。</p>
-
   <section class="card model-card">
     <span class="section-label text-small">方向排序 A</span>
     <h3>A｜创新药技术路线：按「未被定价」排序，同时列「现在的收入体量」</h3>
@@ -3177,8 +3213,8 @@
   </section>
   </div>
 
-  <div class="ghaf-page" id="ghaf-page-3">
-  <p class="map-kicker text-small">附页｜来自「中美医药投研框架」看板；数据截止 2026-08-04。五口径＝ARK Big Ideas 2026 · MNC $3B+ 大额交易（19 笔，见第 4 页）· JPM 2026 管理层主题 · ClinicalTrials.gov 管线数据 · ASCO/ASH/ADA/ACR 学术年会。</p>
+  <div class="ghaf-page" id="ghaf-page-5">
+  <p class="map-kicker text-small">附注·验证与交易｜五口径交叉验证（ARK · MNC 大额交易 · JPM 管理层 · CT.gov 管线 · 学术年会）与 2025-01 至 2026-08 Top Pharma $3B+ 交易 19 笔明细。数据截止 2026-08-04。</p>
 
   <section class="card model-card">
     <span class="section-label text-small">五口径 · 共识矩阵</span>
@@ -3357,10 +3393,6 @@
     </div>
     <p class="text-small source-note">Source：ARK Invest Big Ideas 2026；MNC 对齐度为原看板按第 4 页 19 笔交易与 ARK 五方向的交叉归纳。</p>
   </section>
-  </div>
-
-  <div class="ghaf-page" id="ghaf-page-4">
-  <p class="map-kicker text-small">附页｜来自「中美医药投研框架」看板；2025-01 至 2026-08 Top Pharma $3B+ 交易共 19 笔；数据截止 2026-08-04。</p>
 
   <section class="card model-card">
     <span class="section-label text-small">MNC 交易</span>
@@ -3542,10 +3574,10 @@
       b.addEventListener('click', function () { show(parseInt(b.getAttribute('data-ghaf-page'), 10), true); });
     });
     window.addEventListener('hashchange', function () {
-      var m = location.hash.match(/^#p([2-4])$/);
+      var m = location.hash.match(/^#p([2-5])$/);
       show(m ? parseInt(m[1], 10) : 1, false);
     });
-    var m = location.hash.match(/^#p([2-4])$/);
+    var m = location.hash.match(/^#p([2-5])$/);
     if (m) show(parseInt(m[1], 10), false);
   })();
   </script>
